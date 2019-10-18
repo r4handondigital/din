@@ -8,10 +8,19 @@ $(document).ready(function(){
       $( this ).toggleClass( "atv" );
     });
 
+    //MOBILE MENU
+    $(".menu-mov").click(function () {
+        $("#anima_mobile").toggleClass("atv_men");
+    });
+
+    $('[data-toggle="tooltip"]').tooltip();
+
 
     $("#cpf").mask("999.999.999-99");
 
 
+
+    // MODAL RECUPERAR SENHA 
     $('.btn-click').on('click', function(){
       click()
     });
@@ -99,6 +108,12 @@ $(document).ready(function(){
           }
         })
       }; // FIM
+
+
+
+       $(window).on("load",function(){
+            $(".contentScroll").mCustomScrollbar();
+        });
 
 
 

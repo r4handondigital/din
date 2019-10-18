@@ -13,6 +13,9 @@
     <!-- Modal de Alerta CSS -->
     <link rel="stylesheet" type="text/css" href="libs/sweetalert2-8.18.3/sweetalert2.min.css">
 
+    <!-- Barra de Rolagem CSS -->
+    <link rel="stylesheet" type="text/css" href="libs/css/jquery.mCustomScrollbar.min.css">
+
     <!-- Principal CSS -->
     <link rel="stylesheet" type="text/css" href="libs/css/master.css">
 
@@ -23,11 +26,11 @@
 
     <title>PORTAL e-TCE</title>
   </head>
-  <body>
+  <body class="bg-cinza">
     
     <header>
         <div class="container-fluid">
-            <div class="row">
+            <div class="row" >
                 <div class="col" id="logo-blc">
                     
                     <a href="index.html" id="logo"><img src="libs/tce-rn.svg" alt="Logo do TCERN"></a>
@@ -49,29 +52,75 @@
                           <div class="col-auto">
                               <h4>José Arimateia da Fonseca<span>Gestor de RH</span></h4>
                               <ul class="infor-user">
-                                <li><i class="fas fa-bell"></i></li>
-                                <li><i class="fas fa-cog"></i></li>
-                                <li><i class="fas fa-sign-out-alt"></i></li>
+                                <li>
+                                <div class=" dropleft">
+                                  <a href="#" class="dropdown avisos"  id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    12 <i class="fas fa-bell"></i>
+                                  </a>
+                                  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                      <div id="content-1" class="contentScroll mCustomScrollbar">
+                                        <ul class="infor-alertas">
+                                            <li>
+                                                <i class="red fas fa-exclamation-circle"></i>
+                                              <a href="#"><span>há 3 dias</span>Documento foi aprovado pelo TCE</a></li>
+                                            <li>
+                                                <i class="verde fas fa-check-circle"></i>
+                                              <a href="#"><span>há 3 dias</span>Documento foi aprovado pelo TCE</a></li>
+                                            <li>
+                                                <i class="verde fas fa-check-circle"></i>
+                                              <a href="#"><span>há 3 dias</span>Documento foi aprovado pelo TCE</a></li>
+                                            <li>
+                                                <i class="red fas fa-exclamation-circle"></i>
+                                              <a href="#"><span>há 3 dias</span>Documento foi aprovado pelo TCE</a></li>
+
+                                              <li>
+                                                <i class="red fas fa-exclamation-circle"></i>
+                                              <a href="#"><span>há 3 dias</span>Documento foi aprovado pelo TCE</a></li>
+
+                                              <li>
+                                                <i class="red fas fa-exclamation-circle"></i>
+                                              <a href="#"><span>há 3 dias</span>Documento foi aprovado pelo TCE</a></li>
+
+                                              <li>
+                                                <i class="red fas fa-exclamation-circle"></i>
+                                              <a href="#"><span>há 3 dias</span>Documento foi aprovado pelo TCE</a></li>
+
+                                              <li>
+                                                <i class="red fas fa-exclamation-circle"></i>
+                                              <a href="#"><span>há 3 dias</span>Documento foi aprovado pelo TCE</a></li>
+
+                                              <li>
+                                                <i class="red fas fa-exclamation-circle"></i>
+                                              <a href="#"><span>há 3 dias</span>Documento foi aprovado pelo TCE</a></li>
+                                        </ul> 
+                                      </div><!--.contentScroll-->         
+                                  </div><!--.dropdown-menu-->
+                                </div>
+                                 </li>                          
+                                <li><a href="" data-toggle="tooltip" data-placement="top" title="Editar perfil"><i class="fas fa-cog"></i></a></li>
+                                <li><a href="" data-toggle="tooltip" data-placement="top" title="Sair"><i class="fas fa-sign-out-alt"></i></a></li>
                               </ul>    
                           </div>
                           <div class="col-auto">
                                 <img src="libs/img/usuario.jpg">
                           </div>
                           
-                          
-                      </div><!--.box-informacoes-usuario-->
+                         
 
+                      </div><!--.box-informacoes-usuario-->
+                    
+                    <a href="#" class="menu-mov"><i class="fas fa-bars"></i></a>
                 </div><!--#inf_superior-->
             </div><!--.row-->
         </div><!--.container-fluid-->
          
     </header><!-- /header -->
 
-    <div class="container-fluid">
+    <div class="container-fluid" id="anima_mobile">
       
-        <div class="row">
+        <div class="row" id="bloco-site">
             
-            <div class="col" id="bg-menu">
+            <div class="col mov-menu" id="bg-menu">
 
              <div id="Menu" class="list-group">
                 <a href="#demo3" data-toggle="collapse" class="mn_sub" data-parent="#Menu">Administração</a>
@@ -107,7 +156,7 @@
 
             </div><!-- /col  // Menu lateral (DESKTOP) -->
 
-            <div class="col-md-10">
+            <div class="col-md-10" id="geral-conteudo">
               <!-- MIOLO DE PÃO -->
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
@@ -117,6 +166,7 @@
                 </ol>
               </nav>
               <!-- MIOLO DE PÃO -->
+
 
 
               <h1>Bem-vindo ao Sistema do Plano de Fiscalização</h1>
