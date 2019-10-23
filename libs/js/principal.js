@@ -1,5 +1,81 @@
 $(document).ready(function(){
 
+  var table = $('#example').DataTable({ 
+        scrollY:        300,
+        scrollX:        true,
+        scrollCollapse: true,
+        paging:         true,
+        fixedColumns:   {
+            leftColumns: 2
+        },    
+      'columnDefs': [
+         {
+            'targets': 0,
+            'checkboxes': {
+               'selectRow': true
+            }
+         }
+      ],
+      'select': {
+         'style': 'multi'
+      },
+      'order': [[1, 'asc']]
+   });
+   
+   // Handle form submission event 
+   $('#frm-example').on('submit', function(e){
+      var form = this;
+      
+      var rows_selected = table.column(0).checkboxes.selected();
+
+      // Iterate over all selected checkboxes
+      $.each(rows_selected, function(index, rowId){
+         // Create a hidden element 
+         $(form).append(
+             $('<input>')
+                .attr('type', 'hidden')
+                .attr('name', 'id[]')
+                .val(rowId)
+         );
+      });
+
+      // FOR DEMONSTRATION ONLY
+      // The code below is not needed in production
+      
+      // Output form data to a console     
+      $('#example-console-rows').text(rows_selected.join(","));
+      
+      // Output form data to a console     
+      $('#example-console-form').text($(form).serialize());
+       
+      // Remove added elements
+      $('input[name="id\[\]"]', form).remove();
+       
+      // Prevent actual form submission
+      e.preventDefault();
+   });   
+
+    /*$('#example').DataTable( {
+        scrollY:        300,
+        scrollX:        true,
+        scrollCollapse: true,
+        paging:         false,
+        fixedColumns:   {
+            leftColumns: 2
+        },
+        columnDefs: [ {
+            orderable: false,
+            className: 'select-checkbox',
+            targets:   0
+        } ],
+        select: {
+            style:    'os',
+            selector: 'td:first-child'
+        },
+        order: [[ 1, 'asc' ]]
+    } );*/
+
+
     $( ".mn_sub" ).click(function() {
       $( this ).toggleClass( "setnav" );
     });
@@ -8,12 +84,7 @@ $(document).ready(function(){
       $( this ).toggleClass( "atv" );
     });
 
-    //MOBILE MENU
-    $(".menu-mov").click(function () {
-        $("#anima_mobile").toggleClass("atv_men");
-    });
-
-    $('[data-toggle="tooltip"]').tooltip();
+   $('[data-toggle="tooltip"]').tooltip();
 
 
     $("#cpf").mask("999.999.999-99");
@@ -43,6 +114,17 @@ $(document).ready(function(){
 
 
 }); // FIM 
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "100%";
+  $(".sidenav").addClass( "atv" );
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  $(".sidenav").toggleClass( "atv" );
+}
+
 
 // Exemplo de JavaScript inicial para desativar envios de formulário, se houver campos inválidos.
 (function() {
@@ -114,6 +196,10 @@ $(document).ready(function(){
        $(window).on("load",function(){
             $(".contentScroll").mCustomScrollbar();
         });
+
+
+
+
 
 
 

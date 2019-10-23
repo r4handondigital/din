@@ -37,7 +37,7 @@ a,a:hover{
 }
 
 
-body, h1, h2, h3, h4, h5, h6, p, ul, ol, dl, input, textarea {
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, dl,li, input, textarea {
     font-family: 'Segoe UI';
   
 }
@@ -176,9 +176,35 @@ body.bg-cinza{
   background: #21483F;
 }
 
+
+table.dataTable.dt-checkboxes-select tbody tr,
+table.dataTable thead th.dt-checkboxes-select-all,
+table.dataTable tbody td.dt-checkboxes-cell {
+  cursor: pointer;
+}
+
+table.dataTable thead th.dt-checkboxes-select-all,
+table.dataTable tbody td.dt-checkboxes-cell {
+  text-align: center;
+}
+
+div.dataTables_wrapper span.select-info,
+div.dataTables_wrapper span.select-item {
+  margin-left: 0.5em;
+}
+
+@media screen and (max-width: 640px) {
+  div.dataTables_wrapper span.select-info,
+  div.dataTables_wrapper span.select-item {
+    margin-left: 0;
+    display: block;
+  }
+}
+
+
 /* TOPO */
 header{
-  border-bottom:4px solid #DEA400; 
+  border-bottom: 4px solid #DEA400;
   height: 120px;
 }
 
@@ -206,40 +232,122 @@ header{
 }
 
 .menu-mov{
-  font-size: 40px;
-  position: absolute;
-  right: 400px;
-  top: 30px;
-  color: #fff;
-}
-/* MOBILE */
-#bg-menu{
  display: none;
- opacity: 0;
-  width: 0 !important;
-  max-width: 0 !important;
-  transition: .4s;
 }
-.atv_menu.#bg-menu{
-  display: block;
+
+/* INICIO MENU MOBILE */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #21483F; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+/*padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;*/
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.closebtn {
+  color: #DEA400 !important;
+}
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.logo-tce-mobile{
+  position: absolute;
+  top: 14px;
+  left: 0;
+  border-bottom: 4px solid #DEA400;
+  width: 100%;
+  padding-left: 30px;
+  padding-bottom: 18px;
+}
+.logo-tce-mobile img{
+  width: 180px;
+}
+
+#mySidenav .nome-sistema{
+ 
+  transition: .4s;
+  opacity: 0;
+   font-size: 15px;  
+  position: fixed;  
+  left: 0;
+
+}
+#mySidenav.atv .nome-sistema{
+  display: block !important;
   opacity: 1;
-  width: 100% !important;
-  max-width: 100% !important;
   transition: .4s;
+  font-size: 15px;  
+  color: #fff;
+  left: 76px;
+  bottom: 15px;
+}
+#mySidenav .nome-sistema span{
+  display: block;
 }
 
-#geral-conteudo{
-  transition: .4s;
+#mySidenav .nome-sistema::before {
+    content: '';
+    background: url(../img/business.svg) no-repeat;
+    background-size: cover;
+    width: 32px;
+    position: absolute;
+    left: -45px;
+    top: 1px;
+    height: 32px;
+    display: block;
 }
-.atv_menu#geral-conteudo{
-  width: 100% !important;
-  max-width: 100% !important;
-  transition: .4s;
+
+#mySidenav .box-informacoes-usuario{position: absolute;top: 122px;right:60px; display: block !important;}
+
+#mySidenav .box-informacoes-usuario img{
+  width: 30px;
 }
 
-/*mobile*/
-
-
+#mySidenav .box-informacoes-usuario h4{
+    top:0;
+}
+#mySidenav #Menu{
+  margin:80px 0px 30px 30px!important;
+}
+/*fim menu mobile*/
 
 .porta-etce h2{
   text-align: center;
@@ -252,11 +360,11 @@ header{
 }
 
 .nome-sistema{
-  font-size: 26px;
-  position: absolute;
-  color: #fff;
-  left: 240px;
-  top: 25px;
+ font-size: 26px;
+    position: absolute;
+    color: #fff;
+    left: 205px;
+    bottom: 16px;
 }
 .nome-sistema span{
   display: block;
@@ -377,6 +485,15 @@ a.avisos{
     width: 296px;
 }
 
+#content-tabela.contentScroll {
+    height: 600px;
+    width: 100%;
+}
+
+.fa-hover{
+  padding: 10px;
+}
+
 .contentScroll {
     float: left;
 }
@@ -482,7 +599,13 @@ a.mn_sub.no_sub::before{
 /* FIM MENU */
 
 
+#geral-conteudo .row{
+  margin-bottom: 30px;
+}
 
+#geral-conteudo, #geral-conteudo a{
+  color: #545047;
+}
 /* MIOLO */
 
 .breadcrumb{
@@ -495,6 +618,86 @@ a.mn_sub.no_sub::before{
 .breadcrumb-item.active{
   font-weight: bold;
 }
+
+
+/*BOXES DE INFORMAÇÕES*/
+
+
+
+.box-info-inicial{
+  display: block;
+  padding: 5px 20px 5px 20px;
+  background: #FCFBFB;
+  min-height: 110px;
+  position: relative;
+}
+
+.info-inicial-titulo,.info-inicial-numeros{
+  text-align: left;
+}
+.info-inicial-icone{
+  position: relative;
+  float: right;
+  padding: 0 5px 13px 20px;
+  color: #BAB8B8;
+  top: -7px;
+  font-size: 45px;
+  text-align: center;
+  right: 0;
+}
+.info-inicial-titulo{
+  text-transform: uppercase;
+  color: #BAB8B8;
+  margin-bottom: 0;
+  font-size: 14px;
+  padding-bottom: 7px;
+  bottom: 0;
+}
+
+
+.info-inicial-titulo small{
+  display: block;
+  font-size:10px;
+  color: #DEA400;
+}
+.info-inicial-numeros{
+  font-weight: bold;
+  font-size: 44px;
+  color: #21483F;
+}
+
+.success-bg .box-info-inicial{
+  border:1px solid #28a745 !important;
+  color: #28a745;
+}
+
+.success-bg .info-inicial-icone{
+}
+
+.titulo{
+  font-size: 24px;
+  font-weight: bold;
+  color: #347D6B;
+  text-transform: uppercase;
+}
+
+
+
+.legenda-tabela{
+  float: right;
+  padding: 0;
+  list-style: none;
+}
+.legenda-tabela li{
+  display: inline;
+  color: #ccc;
+  margin-left: 15px;
+}
+.legenda-tabela li:hover{
+  color:#347D6B ;
+}
+
+
 
 
 
@@ -547,7 +750,66 @@ inferior a 768
 }
 
 @media only screen and  (max-width:768px){
+
+  body{
+    overflow-y: hidden;
+  }
   
+  #bg-menu,.nome-sistema,.box-informacoes-usuario h4,.box-informacoes-usuario img.user-portal{
+    display: none;
+  }
   
+
+  #mySidenav .box-informacoes-usuario h4{
+    display: block !important;
+    float: left;
+    right: 15px;
+  }
+
+  .box-informacoes-usuario img{
+    float: right;
+  }
+  #bg-menu, #logo-blc {
+    max-width: 100px;
+  }
+  
+#inf_superior{
+  top: -112px;
+}
+
+.porta-etce{
+  left: 103px;
+}
+
+.infor-user {
+    position: absolute;
+    right: 8px;
+    bottom: -52px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 130px;
+}
+
+.menu-mov{
+  display: block;
+  font-size: 40px;
+  position: absolute;
+  right: 18px;
+  top: 30px;
+  color: #fff;
+}
+.infor-user li{
+  position: relative;
+}
+
+.col-sm-12{
+  margin-bottom: 20px;
+}
+
+.dropdown-menu.show{
+  left: 0 !important;
+}
+
 }/*FIM RESOLUCAO*/
 
