@@ -2,7 +2,7 @@
 
              <div id="Menu" class="list-group">
                 <a href="inicial.php" class="mn_sub no_sub" >Home</a>
-                <a href="#demo3" data-toggle="collapse" class="mn_sub" data-parent="#Menu">Administração</a>
+                <a href="#demo3" data-toggle="collapse" class="mn_sub" data-parent="#Menu">Administrativo</a>
                 <div class="collapse" id="demo3">
                   <a class="mn_sb_sb" href="#MenuLvl1"  data-toggle="collapse" data-parent="#MenuLvl1">Subitem 1.2</a>
                   <div class="collapse" id="MenuLvl1">
@@ -33,4 +33,5 @@
                  <a href="icones.php" class="mn_sub no_sub" >Icones</a>
                  <a href="graficos.php" class="mn_sub no_sub" >Gráficos</a>
                  <a href="tabelas.php" class="mn_sub no_sub" >Tabelas</a>
+                 <a href="editar-cadastro.php" class="mn_sub no_sub" >Editar Cadastro</a>
               </div><!-- #menu -->

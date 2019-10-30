@@ -557,10 +557,10 @@ a.mn_sub::before {
     -ms-transform: rotate(-180deg);
     transform: rotate(-180deg);
 }
-
-.collapse{
-  display: table;
-  padding-left: 15px;
+a.mn_sub.setnav::before {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
 }
 
 a.mn_sub::before,.collapse a,.collapsing a,.mn_sb_sb.atv{
@@ -569,11 +569,13 @@ a.mn_sub::before,.collapse a,.collapsing a,.mn_sb_sb.atv{
     transition: transform .3s,-webkit-transform .3s;
 }
 
-a.mn_sub.setnav::before {
-    -webkit-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    transform: rotate(0deg);
+
+.collapse{
+  display: table;
+  padding-left: 15px;
 }
+
+
 
 a.mn_sub.no_sub::before{
   -webkit-transform: rotate(90deg);
@@ -816,9 +818,59 @@ table td.sorting_1{
   margin:0 5px;
 }
 
+fieldset{
+  margin:20px 0;
+  padding: 20px;
+  border: 1px solid #E2E3E5 !important;
+  border-radius:4px;
+}
+
+legend{
+  width: auto;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #D9D9D9;
+}
+
+.gj-picker-bootstrap [role=header] {
+    background: #34695C;
+    color: #fff;
+}
+
+.gj-picker-bootstrap .selected {
+    color: #fff;
+    font-weight: bold;
+}
+.gj-picker-bootstrap{
+  border:0;
+}
 
 
+.box-input{
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+  position: relative;
+}
 
+.remover_campo{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.form-control-file {
+    display: block;
+    width: 100%;
+    background: #F1F1F1;
+    border-radius: 5px;
+    padding: 7px;
+}
+
+.bt-anexo{
+  border:1px solid #D9D9D9;
+  text-align: left !important;
+}
 /*  TESTES DE RESOLUÃ‡Ã•ES PADRÃ•ES 
 
 4k - Acima de 1920

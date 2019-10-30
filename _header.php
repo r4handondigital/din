@@ -7,9 +7,11 @@
     <link rel="shortcut icon" href="favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+  
    <!-- Plugins CSS -->
     <link rel="stylesheet" type="text/css" href="libs/css/plugins.css">
-    
+
+
        <!-- Principal CSS -->
     <link rel="stylesheet" type="text/css" href="libs/css/master.css">
 
@@ -47,7 +49,7 @@
                               <ul class="infor-user">
                                 <li>
                                 <div class=" dropleft">
-                                  <a href="#" class="dropdown avisos"  id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  <a href="#" class="dropdown avisos"  id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-placement="top" title="Mensagens">
                                     12 <i class="fa fa-bell"></i>
                                   </a>
                                   <div class="dropdown-menu" aria-labelledby="dropdownMenu2">

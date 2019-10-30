@@ -32,6 +32,8 @@ function updateDataTableSelectAllCtrl(table){
 
 $(document).ready(function(){
 
+
+
 // Array holding selected row IDs
    var rows_selected = [];
    var table = $('#example').DataTable({
@@ -176,7 +178,7 @@ $(document).ready(function(){
     });
 
 
-
+    // EVENTOS SIMPLES
     $( ".mn_sub" ).click(function() {
       $( this ).toggleClass( "setnav" );
     });
@@ -185,12 +187,55 @@ $(document).ready(function(){
       $( this ).toggleClass( "atv" );
     });
 
+
    $('[data-toggle="tooltip"]').tooltip();
 
 
+
+    // FORMULARIO
     $("#cpf").mask("999.999.999-99");
 
+    $("#telefone").mask("(99) 9999.9999");
 
+    $("#celular").mask("(99) 9.9999.9999");
+
+    $("#cep").mask("99999-999");
+
+
+    // ADCIONAR MAIS ARQUIVOS VIA UPLOAD
+     var campos_max          = 10;   //max de 10 campos
+        var x = 1; // campos iniciais
+        $('#add_field').click (function(e) {
+                e.preventDefault();     //prevenir novos clicks
+                if (x < campos_max) {
+                        $('#listas').append('<div class="box-input">\
+                                <input type="file" class="form-control-file" name="arquivos[]" >\
+                                <a href="#" class="remover_campo"><i class="fa fa-trash"></i></a>\
+                                </div>');
+                        x++;
+                }
+        });
+
+        // Remover o div anterior
+        $('#listas').on("click",".remover_campo",function(e) {
+                e.preventDefault();
+                $(this).parent('div').remove();
+                x--;
+        });
+
+
+    // ENVIADO COM SUCESSO
+    
+   /* $('#envio_sucesso').on('click', function(){
+        Swal.fire({
+          title: 'Sucesso!',
+          text: 'Seu cadastro foi atualizado.',
+          type: 'success',
+          confirmButtonText: 'Fechar'
+        })
+    });*/
+
+   
 
     // MODAL RECUPERAR SENHA 
     $('.btn-click').on('click', function(){
@@ -213,9 +258,19 @@ $(document).ready(function(){
       }
     };
 
+     $('.datepicker').datepicker({ 
+        uiLibrary: 'bootstrap4',
+        format: 'dd/mm/yyyy',
+        iconsLibrary: 'fontawesome',
+        header: true,
+        footer: true, 
+        modal: true 
+      });
 
 }); // FIM 
 
+
+// MENU MOBILE
 function openNav() {
   document.getElementById("mySidenav").style.width = "100%";
   $(".sidenav").addClass( "atv" );
@@ -292,7 +347,77 @@ function closeNav() {
         })
       }; // FIM
 
+// CONSULTAR CEP
+ function limpa_formulário_cep() {
+            //Limpa valores do formulário de cep.
+            document.getElementById('rua').value=("");
+            document.getElementById('bairro').value=("");
+            document.getElementById('cidade').value=("");
+            document.getElementById('uf').value=("");
+            
+    }
 
+    function meu_callback(conteudo) {
+        if (!("erro" in conteudo)) {
+            //Atualiza os campos com os valores.
+            document.getElementById('rua').value=(conteudo.logradouro);
+            document.getElementById('bairro').value=(conteudo.bairro);
+            document.getElementById('cidade').value=(conteudo.localidade);
+            document.getElementById('uf').value=(conteudo.uf);
+            
+        } //end if.
+        else {
+            //CEP não Encontrado.
+            limpa_formulário_cep();
+            alert("CEP não encontrado.");
+        }
+    }
+        
+    function pesquisacep(valor) {
+
+        //Nova variável "cep" somente com dígitos.
+        var cep = valor.replace(/\D/g, '');
+
+        //Verifica se campo cep possui valor informado.
+        if (cep != "") {
+
+            //Expressão regular para validar o CEP.
+            var validacep = /^[0-9]{8}$/;
+
+            //Valida o formato do CEP.
+            if(validacep.test(cep)) {
+
+                //Preenche os campos com "..." enquanto consulta webservice.
+                document.getElementById('rua').value="...";
+                document.getElementById('bairro').value="...";
+                document.getElementById('cidade').value="...";
+                document.getElementById('uf').value="...";
+                
+
+                //Cria um elemento javascript.
+                var script = document.createElement('script');
+
+                //Sincroniza com o callback.
+                script.src = 'https://viacep.com.br/ws/'+ cep + '/json/?callback=meu_callback';
+
+                //Insere script no documento e carrega o conteúdo.
+                document.body.appendChild(script);
+
+            } //end if.
+            else {
+                //cep é inválido.
+                limpa_formulário_cep();
+                alert("Formato de CEP inválido.");
+            }
+        } //end if.
+        else {
+            //cep sem valor, limpa formulário.
+            limpa_formulário_cep();
+        }
+    };
+
+
+// BARRA DE ROLAGEM
        $(window).on("load",function(){
             $(".contentScroll").mCustomScrollbar();
         });
