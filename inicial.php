@@ -22,61 +22,26 @@
 
                 <div class="row">
                     <div class="col-sm-12">
+                      <div class="alert-user alert alert-warning alert-dismissible fade show" role="alert">
+                        <h1>Você tem 107 alertas precisando de sua atenção!</h1> 
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
 
-                        <div class="alert alert-success fade show" role="alert">
-                          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+
+                        <div class="hello-user alert alert-success fade show" role="alert">
+                          <!--<button type="button" class="close" data-dismiss="alert" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
-                          </button>
-                          <h4 class="alert-heading">Muito bem!</h4>
-                          <p>Aêêê! Você conseguiu ler essa mensagem de alerta. Esse texto vai ter quer se extender um pouquinho pra você conseguir ver como o espaçamento dentro de um alerta funciona.</p>
-                          <hr>
-                          <p class="mb-0">Sempre que precisar, use utilitários de margem para manter as coisas perfeitas.</p>
+                          </button>-->
+                          <h4 class="alert-heading">Bem-vindo ao Sistema do Plano de Fiscalização Anual</h4>
+                          
                         </div><!-- / MENSAGEM -->
 
                     </div>
                 </div><!-- / row DAS MENSAGENS-->
 
-                <div class="row">
-                    
-                    <div class="col-md-3 col-sm-12">
-                          <a href="#" class="shadow-sm rounded box-info-inicial">
-                              <div class="info-inicial-icone"><i class="fa fa-search"></i></div>
-                               <h3 class="info-inicial-numeros">232</h3>
-                              <p class="info-inicial-titulo">Acompanhamento de Editais <small>Caso tenha alguma observação para acrescentar colocar aqui</small></p>
-                             
-                          </a>
-                    </div><!--.col-md-3 col-sm-12-->
-
-                   <div class="col-md-3 col-sm-12">
-                          <a href="#" class="shadow-sm rounded box-info-inicial">
-                              <div class="info-inicial-icone"><i class="fa fa-cogs"></i></div>
-                               <h3 class="info-inicial-numeros">98</h3>
-                              <p class="info-inicial-titulo">Configurações do sistema <small>Caso tenha alguma observação para acrescentar colocar aqui</small></p>
-                             
-                          </a>
-                    </div><!--.col-md-3 col-sm-12-->
-
-
-                    <div class="col-md-3 col-sm-12">
-                          <a href="#" class="shadow-sm rounded box-info-inicial">
-                              <div class="info-inicial-icone"><i class="fa fa-exclamation-triangle"></i></div>
-                               <h3 class="info-inicial-numeros">24</h3>
-                              <p class="info-inicial-titulo">Informações importantes <small>Caso tenha alguma observação para acrescentar colocar aqui</small></p>
-                             
-                          </a>
-                    </div><!--.col-md-3 col-sm-12-->
-
-
-                    <div class="col-md-3 col-sm-12">
-                          <a href="#" class="shadow-sm rounded box-info-inicial">
-                              <div class="info-inicial-icone"><i class="fa fa-envelope-o"></i></div>
-                               <h3 class="info-inicial-numeros">358</h3>
-                              <p class="info-inicial-titulo">Mensagens no departamento<small>Caso tenha alguma observação para acrescentar colocar aqui</small></p>
-                             
-                          </a>
-                    </div><!--.col-md-3 col-sm-12-->
-            
-                </div><!-- /row INFORMAÇÕES INICIAIS -->
+                
                 
             </div><!--.col-md-10 GERAL DO MIOLO-->
 

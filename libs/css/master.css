@@ -633,6 +633,24 @@ a.mn_sub.no_sub::before{
 }
 
 
+.hello-user{
+  border: 1px solid #D9D9D9 !important;
+  background: transparent !important;
+  color: #34695C;
+  text-align: center;
+  padding: 30px 50px;
+}
+
+.hello-user h4{
+  font-size: 29px !important;
+
+}
+
+.alert-user h1{
+  font-size: 29px;
+  text-align: center;
+  padding: 20px 40px;
+}
 /*BOXES DE INFORMAÇÕES*/
 
 
