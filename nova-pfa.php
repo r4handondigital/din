@@ -50,7 +50,7 @@
                         
                             <div class="row">
                                 <div class="col-sm-12 col-md-8">
-                                    <input type="text" id="nome" name="nome" class="form-control form-control-lg" placeholder="Descrição do Plano de Fiscalização" >
+                                    <input type="text" id="descricaopfa" name="descricaopfa" class="form-control form-control-lg" placeholder="Descrição do Plano de Fiscalização" >
                                      
                                   </div>
 
@@ -62,25 +62,61 @@
                                      <input type="text" id="datafinal" name="datafinal" placeholder="Data Final" class="datafim form-control form-control-lg" />
                                   </div>
                                     
-                                    <div class="input-group input-daterange">
-                                      <input type="text" class="form-control" value="2012-04-05">
-                                      <div class="input-group-addon">to</div>
-                                      <input type="text" class="form-control" value="2012-04-19">
-                                  </div>
+                                
                                   
                                  
                             </div><!--.row-->
 
                           </fieldset>
+                          
+                          <fieldset>
+                            <legend>Dados do Processo</legend>
 
+                              <div class="row">
+                                  <div class="col-sm-4 ">
+                                    <input type="number" name="numero" class="form-control form-control-lg" placeholder="Número" >
+                                     
+                                  </div>
+
+                                  <div class="col-sm-4">
+                                    <select name="ano" class="form-control form-control-lg">
+                                      <option disabled selected>Ano</option>
+                                      <option value="2017">2017</option>
+                                      <option value="2018">2018</option>
+                                      <option value="2019">2019</option>
+                                    </select>
+                                  </div>
+
+                                  <div class="col-sm-4">
+                                    <button class="btn btn-primary btn-lg btn-block" >Pesquisar</button>
+                                  </div>
+
+                              </div>
+                             
+                              <div class="row">
+                                  <div class="col-sm-6 col-md-3">
+                                    <input type="text" name="tipo" class="form-control form-control-lg" placeholder="Tipo de Processo" disabled>
+                                     
+                                  </div>
+                                  <div class="col-sm-6 col-md-3">
+                                    <input type="text" name="interessado" class="form-control form-control-lg" placeholder="Interessado" disabled>
+                                     
+                                  </div>
+                                  <div class="col-sm-6 col-md-3">
+                                    <input type="text" name="relator" class="form-control form-control-lg" placeholder="Relator" disabled>
+                                     
+                                  </div>
+                                  <div class="col-sm-6 col-md-3">
+                                    <input type="text" name="setor" class="form-control form-control-lg" placeholder="Setor Atual" disabled>
+                                     
+                                  </div>
+                              </div>
+                          </fieldset>
                          
 
                          <div class="botoes-de-envio">
-                                  
-                                  <button class="btn btn-primary" >Salvar dimensão</button>
-
-                                 
-                              </div>
+                            <button class="btn btn-primary btn-lg" >Salvar PFA</button>
+                          </div>
 
                         </form>
 

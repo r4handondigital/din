@@ -868,7 +868,7 @@ table td.sorting_1{
 
 fieldset{
   margin:20px 0;
-  padding: 20px;
+  padding: 20px 20px 0px 20px;
   border: 1px solid #E2E3E5 !important;
   border-radius:4px;
 }
@@ -1126,3 +1126,67 @@ form .col-auto {
 
 }/*FIM RESOLUCAO*/
 
+/*ACESSIBILIDADE*/
+.contraste header,.contraste,.contraste .breadcrumb,.contraste .infor-alertas li:nth-child(odd){
+  background: #000 !important;
+}
+
+.contraste .porta-etce,.contraste #bg-menu, .contraste .hello-user,.contraste .alert-warning,.contraste .dropdown-menu{
+  background: #222 !important;
+}
+
+.contraste table.dataTable thead th,.contraste a,.contraste .porta-etce h2, .contraste .box-informacoes-usuario h4{
+  color: yellow !important;
+}
+
+.contraste #geral-conteudo,.contraste #geral-conteudo a,.contraste  .dataTables_wrapper .dataTables_paginate,.contraste .breadcrumb-item.active,.contraste .breadcrumb-item+.breadcrumb-item::before,.contraste .collapse a,.contraste .titulo,.contraste .alert-warning h1,.contraste .box-informacoes-usuario h4 span,.contraste .infor-alertas li span,.contraste .close{
+  color: #fff !important;
+  opacity: 1 !important;
+}
+
+.contraste .alert-warning{
+  border-color: yellow !important;
+}
+
+.contraste a.mn_sub::before{
+      background: url(../img/arrow-cs.svg) no-repeat;
+          background-position: center center;
+    
+}
+
+
+
+
+/* CORES PARA BOTOES E BOXES */
+
+.contraste .hello-user{
+  background: #fff !important;
+  
+}
+
+.contraste table,.contraste #geral-conteudo table a, .contraste .hello-user h4,.contraste .btn-primary,.contraste .btn-success{
+  color: #000 !important;
+}
+
+.contraste .btn-primary,.contraste .btn-success{
+  background: yellow !important;
+  border-color: yellow !important;
+  color: #000 !important;
+}
+
+.contraste #geral-conteudo .btn-primary,.contraste #geral-conteudo .btn-success{
+  color: #000 !important;
+}
+
+.contraste .btn-danger{
+  background: #0f4098 !important;
+  border-color:#0f4098 !important; 
+  color: #fff !important;
+}
+.contraste .dataTables_wrapper .dataTables_paginate .paginate_button.current{
+  background: blue !important;
+  border-color: blue; 
+}
+.contraste .bloco-tabela-dados .dataTables_wrapper .dataTables_filter input{
+  background:#fff url(../img/search-solid.svg) no-repeat 7px center;
+}

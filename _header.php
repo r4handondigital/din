@@ -28,7 +28,7 @@
             <div class="row" >
                 <div class="col" id="logo-blc">
                     
-                    <a href="index.html" id="logo"><img src="libs/tce-rn.svg" alt="Logo do TCERN"></a>
+                    <a href="inicial.php" id="logo"><img src="libs/tce-rn.svg" alt="Logo do TCERN"></a>
 
                 </div><!--#logo-blc-->
                 <div class="col-md-10 col-sm-8" id="inf_superior">
@@ -93,6 +93,7 @@
                                 </div>
                                  </li>                          
                                 <li><a href="" data-toggle="tooltip" data-placement="top" title="Editar perfil"><i class="fa fa-cog"></i></a></li>
+                                 <li><a href="javascript:;" class="toggle-contraste" data-toggle="tooltip" data-placement="top" title="Contraste"><i class="fa fa-adjust"></i></a></li>
                                 <li><a href="" data-toggle="tooltip" data-placement="top" title="Sair"><i class="fa fa-sign-out"></i></a></li>
                               </ul>    
                           </div>

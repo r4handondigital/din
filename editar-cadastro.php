@@ -164,7 +164,7 @@
                           </fieldset>
 
                          <div class="botoes-de-envio">
-                                  <button  type="submit" id="envio_sucesso" class="btn btn-primary" >Enviar formulário</button>
+                                  <button  type="submit" id="envio_sucesso" class="btn btn-primary btn-lg" >Enviar formulário</button>
 
                                  
                               </div>

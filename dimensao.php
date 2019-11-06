@@ -310,8 +310,8 @@
                               
 
                               <div class="botoes-tabela">
-                                  <button id="EditarForm" type="button" class="btn btn-primary" disabled>Editar</button>
-                                  <button id="ExcluirForm" type="button" onclick="alertaModal('handleDismiss')" class="btn btn-danger" disabled>Excluir</button>
+                                  <button id="EditarForm" type="button" class="btn btn-primary btn-lg" disabled>Editar</button>
+                                  <button id="ExcluirForm" type="button" onclick="alertaModal('handleDismiss')" class="btn btn-danger btn-lg" disabled>Excluir</button>
                               </div>
 
                                  </form>

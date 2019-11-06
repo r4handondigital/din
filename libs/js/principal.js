@@ -249,6 +249,7 @@ $(document).ready(function(){
           nome: "required",
           datainicio: "required",
           datafinal: "required",
+          descricaopfa: "required",
           situacao: "required",
           ordem: "required",
                   
@@ -256,6 +257,7 @@ $(document).ready(function(){
         messages: {
           nome: "Informe a descrição da dimensão",
           situacao: "Informe a situação da dimensão",
+          descricaopfa: "Informe a descrição do PFA",
           ordem: "Obrigatório",
           datainicio: "Obrigatório",
           datafinal: "Obrigatório"
@@ -351,6 +353,24 @@ $(document).ready(function(){
     };
 
      $('.datepicker').datepicker({ 
+        uiLibrary: 'bootstrap4',
+        format: 'dd/mm/yyyy',
+        iconsLibrary: 'fontawesome',
+        header: true,
+        footer: true, 
+        modal: true 
+      });
+
+     $('.datafim').datepicker({ 
+        uiLibrary: 'bootstrap4',
+        format: 'dd/mm/yyyy',
+        iconsLibrary: 'fontawesome',
+        header: true,
+        footer: true, 
+        modal: true 
+      });
+
+     $('.datainicio').datepicker({ 
         uiLibrary: 'bootstrap4',
         format: 'dd/mm/yyyy',
         iconsLibrary: 'fontawesome',
@@ -513,3 +533,30 @@ function closeNav() {
        $(window).on("load",function(){
             $(".contentScroll").mCustomScrollbar();
         });
+
+// ACESSIBILIDADE DE CONTRASTE
+
+//classes de layout
+  $('body').addClass( $.cookie('layout_classes') );
+
+//acao botao de alto contraste
+  $('a.toggle-contraste').click(function(){
+    if(!$('body').hasClass('contraste'))
+    {
+      $('body').addClass('contraste'); 
+      layout_classes = $.cookie('layout_classes');
+      if( layout_classes != 'undefined' )
+        layout_classes = layout_classes + ' contraste';
+      else
+        layout_classes = 'contraste';
+      $.cookie('layout_classes', layout_classes );
+    }
+    else
+    {
+      $('body').removeClass('contraste');
+      layout_classes = jQuery.cookie('layout_classes');
+      layout_classes = layout_classes.replace('contraste', '');     
+      jQuery.cookie('layout_classes', layout_classes );   
+    }
+  });
+  //fim acao botao de alto contraste

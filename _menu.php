@@ -13,7 +13,7 @@
                   
                 
                   <a href="pfa.php" >PFA</a>
-                  <a href="pfa.php" >Proposta de Ação</a>
+                  <a href="proposta-de-acao.php" >Proposta de Ação</a>
                 </div>
                 <a href="#demo4"  data-toggle="collapse" class="mn_sub" data-parent="#Menu">Portal TCE</a>
                   <div class="collapse" id="demo4">

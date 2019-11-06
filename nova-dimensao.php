@@ -77,7 +77,7 @@
 
                          <div class="botoes-de-envio">
                                   
-                                  <button  id="salvar_formz" class="btn btn-primary" >Salvar dimensão</button>
+                                  <button  id="salvar_formz" class="btn btn-primary btn-lg" >Salvar dimensão</button>
 
                                  
                               </div>
