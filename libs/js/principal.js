@@ -38,8 +38,9 @@ $(document).ready(function(){
    var rows_selected = [];
    var table = $('#example').DataTable({
        // scrollY:        300,
-       // scrollX:        true,
+        scrollX:        true,
       //  scrollCollapse: false,
+
         paging:         true,
         language: {
           search: '_INPUT_',
