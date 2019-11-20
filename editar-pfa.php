@@ -88,7 +88,7 @@
                                   </div>
 
                                   <div class="col-sm-4">
-                                    <button class="btn btn-primary btn-lg btn-block" >Pesquisar</button>
+                                    <button class="btn btn-primary btn-lg " >Pesquisar</button>
                                   </div>
 
                               </div>
@@ -115,7 +115,7 @@
                          
 
                          <div class="botoes-de-envio">
-                            <button class="btn btn-primary btn-lg" >Salvar PFA</button>
+                            <button class="btn btn-primary " >Salvar </button>
                           </div>
 
                         </form>

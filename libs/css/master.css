@@ -32,6 +32,10 @@ body{
   color: #545047;
 }
 
+.form-group{
+  position: relative;
+}
+
 a,a:hover{
   color: #347D6B;
   cursor: pointer;
