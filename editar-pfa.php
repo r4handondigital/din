@@ -17,7 +17,7 @@
              <li class="breadcrumb-item"><a href="inicial.php"><i class="fa fa-home"></i></a></li>
             <li class="breadcrumb-item"><a href="pfa.php">PFA</a></li>
            
-            <li class="breadcrumb-item active" aria-current="page">Nova PFA</li>
+            <li class="breadcrumb-item active" aria-current="page">Editar PFA</li>
           
           </ol>
         </nav>
@@ -25,7 +25,7 @@
 
          <section class="sessao-conteudo">
            <h1 class="titulo">
-              Nova PFA
+              Editar PFA
             </h1>
          </section> 
 

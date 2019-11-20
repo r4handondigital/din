@@ -15,8 +15,8 @@
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                    <li class="breadcrumb-item"><a href="inicial.php"><i class="fa fa-home"></i></a></li>
-                  <li class="breadcrumb-item"><a >PFA</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Listagem de PFA's</li>
+                 
+                  <li class="breadcrumb-item active" aria-current="page">PFA</li>
                 
                 </ol>
               </nav>
@@ -25,7 +25,7 @@
                <section class="sessao-conteudo">
                  <h1 class="titulo">
                     Plano de Fiscalização Anual
-                    <a href="nova-pfa.php" class="btn btn-primary botao-titulo">Nova PFA</a>
+                    <a href="nova-pfa.php" class="btn btn-primary botao-titulo">Novo PFA</a>
                   </h1>
 
                 <div class="row">
@@ -221,6 +221,273 @@
                                     </td>
                                    
                                   </tr>
+                                    <tr>
+                                     <td></td>
+                                     <td>PFA 2016</td>
+                                     <td>01/01/2016</td>
+                                     <td>31/12/2016</td>
+                                     <td>005083/2016</td>
+                                     <td>1.0</td>
+                                     <td>
+                                        <ul class="legenda-acoes">
+                                            <li><a href="editar-pfa.php" data-toggle="tooltip" data-placement="top" title="Editar"><i class="fa fa-pencil-square-o"></i></a></li>
+                                            
+                                            <li><a data-toggle="tooltip" data-placement="top" title="Excluir" onclick="alertaModal('handleDismiss')"><i class="fa fa-trash"></i></a></li>
+
+                                            <li><a href="#" data-toggle="tooltip" data-placement="top" title="Ações incluídas"><i class="fa fa-link"></i></a></li>
+
+                                            <li><a href="#" data-toggle="tooltip" data-placement="top" title="Versões"><i class="fa fa-code-fork"></i></a></li>
+
+                                            <li><a href="#" data-toggle="tooltip" data-placement="top" title="Download"><i class="fa fa-download"></i></a></li>                                        
+                                        </ul>
+                                    </td>
+                                   
+                                  </tr>
+                                   <tr>
+                                     <td></td>
+                                     <td>PFA 2015</td>
+                                     <td>01/01/2015</td>
+                                     <td>31/12/2015</td>
+                                     <td>005083/2015</td>
+                                     <td>1.0</td>
+                                     <td>
+                                        <ul class="legenda-acoes">
+                                            <li><a href="editar-pfa.php" data-toggle="tooltip" data-placement="top" title="Editar"><i class="fa fa-pencil-square-o"></i></a></li>
+                                            
+                                            <li><a data-toggle="tooltip" data-placement="top" title="Excluir" onclick="alertaModal('handleDismiss')"><i class="fa fa-trash"></i></a></li>
+
+                                            <li><a href="#" data-toggle="tooltip" data-placement="top" title="Ações incluídas"><i class="fa fa-link"></i></a></li>
+
+                                            <li><a href="#" data-toggle="tooltip" data-placement="top" title="Versões"><i class="fa fa-code-fork"></i></a></li>
+
+                                            <li><a href="#" data-toggle="tooltip" data-placement="top" title="Download"><i class="fa fa-download"></i></a></li>                                        
+                                        </ul>
+                                    </td>
+                                   
+                                  </tr>
+
+                                   <tr>
+                                     <td></td>
+                                     <td>PFA 2014</td>
+                                     <td>01/01/2014</td>
+                                     <td>31/12/2014</td>
+                                     <td>005083/2014</td>
+                                     <td>1.0</td>
+                                     <td>
+                                        <ul class="legenda-acoes">
+                                            <li><a href="editar-pfa.php" data-toggle="tooltip" data-placement="top" title="Editar"><i class="fa fa-pencil-square-o"></i></a></li>
+                                            
+                                            <li><a data-toggle="tooltip" data-placement="top" title="Excluir" onclick="alertaModal('handleDismiss')"><i class="fa fa-trash"></i></a></li>
+
+                                            <li><a href="#" data-toggle="tooltip" data-placement="top" title="Ações incluídas"><i class="fa fa-link"></i></a></li>
+
+                                            <li><a href="#" data-toggle="tooltip" data-placement="top" title="Versões"><i class="fa fa-code-fork"></i></a></li>
+
+                                            <li><a href="#" data-toggle="tooltip" data-placement="top" title="Download"><i class="fa fa-download"></i></a></li>                                        
+                                        </ul>
+                                    </td>
+                                   
+                                  </tr>
+                                   <tr>
+                                     <td></td>
+                                     <td>PFA 2013</td>
+                                     <td>01/01/2013</td>
+                                     <td>31/12/2013</td>
+                                     <td>005083/2013</td>
+                                     <td>1.0</td>
+                                     <td>
+                                        <ul class="legenda-acoes">
+                                            <li><a href="editar-pfa.php" data-toggle="tooltip" data-placement="top" title="Editar"><i class="fa fa-pencil-square-o"></i></a></li>
+                                            
+                                            <li><a data-toggle="tooltip" data-placement="top" title="Excluir" onclick="alertaModal('handleDismiss')"><i class="fa fa-trash"></i></a></li>
+
+                                            <li><a href="#" data-toggle="tooltip" data-placement="top" title="Ações incluídas"><i class="fa fa-link"></i></a></li>
+
+                                            <li><a href="#" data-toggle="tooltip" data-placement="top" title="Versões"><i class="fa fa-code-fork"></i></a></li>
+
+                                            <li><a href="#" data-toggle="tooltip" data-placement="top" title="Download"><i class="fa fa-download"></i></a></li>                                        
+                                        </ul>
+                                    </td>
+                                   
+                                  </tr>
+                                    <tr>
+                                     <td></td>
+                                     <td>PFA 2016</td>
+                                     <td>01/01/2016</td>
+                                     <td>31/12/2016</td>
+                                     <td>005083/2016</td>
+                                     <td>1.0</td>
+                                     <td>
+                                        <ul class="legenda-acoes">
+                                            <li><a href="editar-pfa.php" data-toggle="tooltip" data-placement="top" title="Editar"><i class="fa fa-pencil-square-o"></i></a></li>
+                                            
+                                            <li><a data-toggle="tooltip" data-placement="top" title="Excluir" onclick="alertaModal('handleDismiss')"><i class="fa fa-trash"></i></a></li>
+
+                                            <li><a href="#" data-toggle="tooltip" data-placement="top" title="Ações incluídas"><i class="fa fa-link"></i></a></li>
+
+                                            <li><a href="#" data-toggle="tooltip" data-placement="top" title="Versões"><i class="fa fa-code-fork"></i></a></li>
+
+                                            <li><a href="#" data-toggle="tooltip" data-placement="top" title="Download"><i class="fa fa-download"></i></a></li>                                        
+                                        </ul>
+                                    </td>
+                                   
+                                  </tr>
+                                   <tr>
+                                     <td></td>
+                                     <td>PFA 2015</td>
+                                     <td>01/01/2015</td>
+                                     <td>31/12/2015</td>
+                                     <td>005083/2015</td>
+                                     <td>1.0</td>
+                                     <td>
+                                        <ul class="legenda-acoes">
+                                            <li><a href="editar-pfa.php" data-toggle="tooltip" data-placement="top" title="Editar"><i class="fa fa-pencil-square-o"></i></a></li>
+                                            
+                                            <li><a data-toggle="tooltip" data-placement="top" title="Excluir" onclick="alertaModal('handleDismiss')"><i class="fa fa-trash"></i></a></li>
+
+                                            <li><a href="#" data-toggle="tooltip" data-placement="top" title="Ações incluídas"><i class="fa fa-link"></i></a></li>
+
+                                            <li><a href="#" data-toggle="tooltip" data-placement="top" title="Versões"><i class="fa fa-code-fork"></i></a></li>
+
+                                            <li><a href="#" data-toggle="tooltip" data-placement="top" title="Download"><i class="fa fa-download"></i></a></li>                                        
+                                        </ul>
+                                    </td>
+                                   
+                                  </tr>
+
+                                   <tr>
+                                     <td></td>
+                                     <td>PFA 2014</td>
+                                     <td>01/01/2014</td>
+                                     <td>31/12/2014</td>
+                                     <td>005083/2014</td>
+                                     <td>1.0</td>
+                                     <td>
+                                        <ul class="legenda-acoes">
+                                            <li><a href="editar-pfa.php" data-toggle="tooltip" data-placement="top" title="Editar"><i class="fa fa-pencil-square-o"></i></a></li>
+                                            
+                                            <li><a data-toggle="tooltip" data-placement="top" title="Excluir" onclick="alertaModal('handleDismiss')"><i class="fa fa-trash"></i></a></li>
+
+                                            <li><a href="#" data-toggle="tooltip" data-placement="top" title="Ações incluídas"><i class="fa fa-link"></i></a></li>
+
+                                            <li><a href="#" data-toggle="tooltip" data-placement="top" title="Versões"><i class="fa fa-code-fork"></i></a></li>
+
+                                            <li><a href="#" data-toggle="tooltip" data-placement="top" title="Download"><i class="fa fa-download"></i></a></li>                                        
+                                        </ul>
+                                    </td>
+                                   
+                                  </tr>
+                                   <tr>
+                                     <td></td>
+                                     <td>PFA 2013</td>
+                                     <td>01/01/2013</td>
+                                     <td>31/12/2013</td>
+                                     <td>005083/2013</td>
+                                     <td>1.0</td>
+                                     <td>
+                                        <ul class="legenda-acoes">
+                                            <li><a href="editar-pfa.php" data-toggle="tooltip" data-placement="top" title="Editar"><i class="fa fa-pencil-square-o"></i></a></li>
+                                            
+                                            <li><a data-toggle="tooltip" data-placement="top" title="Excluir" onclick="alertaModal('handleDismiss')"><i class="fa fa-trash"></i></a></li>
+
+                                            <li><a href="#" data-toggle="tooltip" data-placement="top" title="Ações incluídas"><i class="fa fa-link"></i></a></li>
+
+                                            <li><a href="#" data-toggle="tooltip" data-placement="top" title="Versões"><i class="fa fa-code-fork"></i></a></li>
+
+                                            <li><a href="#" data-toggle="tooltip" data-placement="top" title="Download"><i class="fa fa-download"></i></a></li>                                        
+                                        </ul>
+                                    </td>
+                                   
+                                  </tr>
+                                    <tr>
+                                     <td></td>
+                                     <td>PFA 2016</td>
+                                     <td>01/01/2016</td>
+                                     <td>31/12/2016</td>
+                                     <td>005083/2016</td>
+                                     <td>1.0</td>
+                                     <td>
+                                        <ul class="legenda-acoes">
+                                            <li><a href="editar-pfa.php" data-toggle="tooltip" data-placement="top" title="Editar"><i class="fa fa-pencil-square-o"></i></a></li>
+                                            
+                                            <li><a data-toggle="tooltip" data-placement="top" title="Excluir" onclick="alertaModal('handleDismiss')"><i class="fa fa-trash"></i></a></li>
+
+                                            <li><a href="#" data-toggle="tooltip" data-placement="top" title="Ações incluídas"><i class="fa fa-link"></i></a></li>
+
+                                            <li><a href="#" data-toggle="tooltip" data-placement="top" title="Versões"><i class="fa fa-code-fork"></i></a></li>
+
+                                            <li><a href="#" data-toggle="tooltip" data-placement="top" title="Download"><i class="fa fa-download"></i></a></li>                                        
+                                        </ul>
+                                    </td>
+                                   
+                                  </tr>
+                                   <tr>
+                                     <td></td>
+                                     <td>PFA 2015</td>
+                                     <td>01/01/2015</td>
+                                     <td>31/12/2015</td>
+                                     <td>005083/2015</td>
+                                     <td>1.0</td>
+                                     <td>
+                                        <ul class="legenda-acoes">
+                                            <li><a href="editar-pfa.php" data-toggle="tooltip" data-placement="top" title="Editar"><i class="fa fa-pencil-square-o"></i></a></li>
+                                            
+                                            <li><a data-toggle="tooltip" data-placement="top" title="Excluir" onclick="alertaModal('handleDismiss')"><i class="fa fa-trash"></i></a></li>
+
+                                            <li><a href="#" data-toggle="tooltip" data-placement="top" title="Ações incluídas"><i class="fa fa-link"></i></a></li>
+
+                                            <li><a href="#" data-toggle="tooltip" data-placement="top" title="Versões"><i class="fa fa-code-fork"></i></a></li>
+
+                                            <li><a href="#" data-toggle="tooltip" data-placement="top" title="Download"><i class="fa fa-download"></i></a></li>                                        
+                                        </ul>
+                                    </td>
+                                   
+                                  </tr>
+
+                                   <tr>
+                                     <td></td>
+                                     <td>PFA 2014</td>
+                                     <td>01/01/2014</td>
+                                     <td>31/12/2014</td>
+                                     <td>005083/2014</td>
+                                     <td>1.0</td>
+                                     <td>
+                                        <ul class="legenda-acoes">
+                                            <li><a href="editar-pfa.php" data-toggle="tooltip" data-placement="top" title="Editar"><i class="fa fa-pencil-square-o"></i></a></li>
+                                            
+                                            <li><a data-toggle="tooltip" data-placement="top" title="Excluir" onclick="alertaModal('handleDismiss')"><i class="fa fa-trash"></i></a></li>
+
+                                            <li><a href="#" data-toggle="tooltip" data-placement="top" title="Ações incluídas"><i class="fa fa-link"></i></a></li>
+
+                                            <li><a href="#" data-toggle="tooltip" data-placement="top" title="Versões"><i class="fa fa-code-fork"></i></a></li>
+
+                                            <li><a href="#" data-toggle="tooltip" data-placement="top" title="Download"><i class="fa fa-download"></i></a></li>                                        
+                                        </ul>
+                                    </td>
+                                   
+                                  </tr>
+                                   <tr>
+                                     <td></td>
+                                     <td>PFA 2013</td>
+                                     <td>01/01/2013</td>
+                                     <td>31/12/2013</td>
+                                     <td>005083/2013</td>
+                                     <td>1.0</td>
+                                     <td>
+                                        <ul class="legenda-acoes">
+                                            <li><a href="editar-pfa.php" data-toggle="tooltip" data-placement="top" title="Editar"><i class="fa fa-pencil-square-o"></i></a></li>
+                                            
+                                            <li><a data-toggle="tooltip" data-placement="top" title="Excluir" onclick="alertaModal('handleDismiss')"><i class="fa fa-trash"></i></a></li>
+
+                                            <li><a href="#" data-toggle="tooltip" data-placement="top" title="Ações incluídas"><i class="fa fa-link"></i></a></li>
+
+                                            <li><a href="#" data-toggle="tooltip" data-placement="top" title="Versões"><i class="fa fa-code-fork"></i></a></li>
+
+                                            <li><a href="#" data-toggle="tooltip" data-placement="top" title="Download"><i class="fa fa-download"></i></a></li>                                        
+                                        </ul>
+                                    </td>
+                                   
+                                  </tr>
                                  
                                </tbody>
                                
@@ -229,8 +496,9 @@
                               
 
                               <div class="botoes-tabela">
-                                  <button id="EditarForm" type="button" class="btn btn-primary btn-lg" disabled>Editar</button>
-                                  <button id="ExcluirForm" type="button" onclick="alertaModal('handleDismiss')" class="btn btn-danger btn-lg" disabled>Excluir</button>
+                                  <button id="EditarForm" type="button" class="btn btn-primary " disabled>Editar</button>
+                                  <button id="ExcluirForm" type="button" onclick="alertaModal('handleDismiss')" class="btn btn-danger " disabled>Excluir</button>
+                                  <a  href="javascript:window.print();"  class="btn btn-outline-success" >Imprimir </a>
                               </div>
 
                                  </form>

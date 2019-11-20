@@ -1,4 +1,4 @@
-/* Desenvolvido por Rondinelle Freire - 15.10.2019*/
+
 
 @font-face {
     font-family: 'Segoe UI';
@@ -37,6 +37,10 @@ a,a:hover{
   cursor: pointer;
 }
 
+.btn{
+  text-transform: uppercase;
+}
+
 
 body, h1, h2, h3, h4, h5, h6, p, ul, ol, dl,li, input, textarea {
     font-family: 'Segoe UI';
@@ -60,13 +64,28 @@ body.bg-cinza{
 }
 .btn-primary,.btn-success {
     color: #fff;
-    background-color: #60A29C;
-    border-color: #60A29C;
+    background-color: #347D6B;
+    border-color: #347D6B;
+    text-transform: uppercase;
 }
 
 .btn-primary:hover,.btn-success:hover{
   background-color: #155760;
   border-color: #155760;
+}
+
+.btn-outline-success{
+  text-transform: uppercase;
+  border-color: #155760;
+  color: #155760 !important;
+}
+
+
+
+.btn-outline-success:hover{
+  text-transform: uppercase;
+  background: #D9D9D9;
+  color: #155760 !important;
 }
 
 .tooltip-inner{
@@ -84,6 +103,42 @@ body.bg-cinza{
     color: #fff;
     background-color: #155760;
     border-color: #155760;
+}
+.right-form{
+  width: 100%;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+form label{
+  color: #347D6B;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.form-text {
+    font-size: 11px;
+    font-style: italic;
+}
+
+.custom-select.is-invalid, .form-control.is-invalid, .was-validated .custom-select:invalid, .was-validated .form-control:invalid {
+    border-color: #dc3545;
+    background: #F8D7DA url(../img/erro-ico.svg) no-repeat 99% center;
+}
+
+.invalid-feedback {
+    display: none;
+    width: 100%;
+    margin-top: .25rem;
+    font-size: 9px;
+    color: #dc3545;
+    position: absolute;
+    right: 20px;
+    top: 0;
+    text-align: right;
+    text-transform: uppercase;
 }
 
 /* CARREGANDO */
@@ -772,7 +827,7 @@ a.mn_sub.no_sub::before{
 
 .bloco-tabela-dados .dataTables_length label span {
     position: absolute;
-    top: 10px;
+    top: 2px;
     left: 87px;
     width: 150px;
     font-size: 12px;

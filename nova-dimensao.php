@@ -50,7 +50,7 @@
                         
                             <div class="row">
                                 <div class="col-sm-1 col-md-1">
-                                    <input type="text" id="ordem" name="ordem" class="form-control form-control-lg" placeholder="Ordem" >
+                                    <input type="number" id="ordem" name="ordem" class="form-control form-control-lg" placeholder="Ordem" >
                                      
                                   </div>
 
@@ -77,7 +77,7 @@
 
                          <div class="botoes-de-envio">
                                   
-                                  <button  id="salvar_formz" class="btn btn-primary btn-lg" >Salvar dimensão</button>
+                                  <button  id="salvar_formz" class="btn btn-primary " >Salvar </button>
 
                                  
                               </div>

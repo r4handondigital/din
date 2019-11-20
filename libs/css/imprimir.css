@@ -1,0 +1,39 @@
+/* Desenvolvido por Rondinelle Freire - 15.10.2019*/
+
+body {
+    -webkit-print-color-adjust: exact;
+    overflow: hidden;
+}
+
+header {
+  background-color: #21483F !important;
+  margin-bottom: 20px;
+}
+
+.dataTables_info,.dataTables_paginate,thead tr th:last-child,tbody tr td:last-child,input[type=checkbox],.dataTables_length,.dataTables_filter,#bg-menu,.breadcrumb,.box-informacoes-usuario,.btn,.legenda-tabela{
+  display: none !important;
+}
+
+#geral-conteudo,.table,.bloco-tabela-dados.dataTables_wrapper,.col-sm-12{
+  width: 100% !important;
+  padding: 0 !important;
+  margin:0 !important;
+  max-width: 100% !important;
+}
+.col-md-10{
+  flex: 100%;
+}
+.porta-etce{
+  height: 115px;
+}
+
+table tr{
+  background: #D9D9D9;
+}
+table,td,th{
+  border: 1px solid #ddd;
+}
+
+table.dataTable thead .sorting,table.dataTable thead .sorting_asc{
+  background: none !important;
+}

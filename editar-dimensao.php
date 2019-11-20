@@ -26,7 +26,7 @@
          <section class="sessao-conteudo">
            <h1 class="titulo">
               Editar Dimensão
-              <a href="nova-dimensao.php" class="btn btn-primary botao-titulo">Nova Dimensão</a>
+            
             </h1>
          </section> 
 
@@ -78,9 +78,10 @@
 
                          <div class="botoes-de-envio">
                                   
-                                  <button  type="reset" id="salvar_form" class="btn btn-primary btn-lg" >Salvar dimensão</button>
+                                  <button  type="button"id="salvar_formz" class="btn btn-primary " >Salvar </button>
+                                  <button  type="reset"  class="btn btn-outline-success" >Limpar </button>
 
-                                 
+                                  
                               </div>
 
                         </form>

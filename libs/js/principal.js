@@ -37,9 +37,9 @@ $(document).ready(function(){
 // Array holding selected row IDs
    var rows_selected = [];
    var table = $('#example').DataTable({
-        scrollY:        300,
-        scrollX:        true,
-        scrollCollapse: true,
+       // scrollY:        300,
+       // scrollX:        true,
+      //  scrollCollapse: false,
         paging:         true,
         language: {
           search: '_INPUT_',
@@ -166,16 +166,32 @@ $(document).ready(function(){
    // ATIVAR BOTÃO FORMULARIO
 
     $('.selec_geral,.itens_relatorios').change(function() {
-        if ($('input:checkbox:checked').length > 2){
+        if ($('input:checkbox:checked').length > 1){
 
-            document.getElementById("EditarForm").disabled = false;
+            //document.getElementById("EditarForm").disabled = true;
             document.getElementById("ExcluirForm").disabled = false;
         }
         else {
-            document.getElementById("EditarForm").disabled = true;
+            //document.getElementById("EditarForm").disabled = false;
             document.getElementById("ExcluirForm").disabled = true;
         }        
     });
+
+
+    $('.itens_relatorios').change(function() {
+        
+        if ($('input:checkbox:checked').length < 3 && $('input:checkbox:checked').length > 1){
+
+            document.getElementById("EditarForm").disabled = false;
+           
+        }
+        else {
+            document.getElementById("EditarForm").disabled = true;
+            
+        }        
+    });
+
+
 
 /*$.validator.setDefaults( {
       submitHandler: function () {
@@ -251,7 +267,13 @@ $(document).ready(function(){
           datafinal: "required",
           descricaopfa: "required",
           situacao: "required",
-          ordem: "required",
+          tituloproposta: "required",
+          dimensaoproposta: "required",
+          situacaoproposta: "required",
+          unidadetecnica: "required",
+          tipodetrabalho: "required",
+          objetivoproposta: "required",
+          usuarioprevisto: "required",
                   
         },
         messages: {
@@ -260,7 +282,7 @@ $(document).ready(function(){
           descricaopfa: "Informe a descrição do PFA",
           ordem: "Obrigatório",
           datainicio: "Obrigatório",
-          datafinal: "Obrigatório"
+          datafinal: "Obrigatório",
          
         },
         errorElement: "em",

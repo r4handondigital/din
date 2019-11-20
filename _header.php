@@ -8,12 +8,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   
-   <!-- Plugins CSS -->
+    <!-- Plugins CSS -->
     <link rel="stylesheet" type="text/css" href="libs/css/plugins.css">
 
 
-       <!-- Principal CSS -->
+    <!-- Principal CSS -->
     <link rel="stylesheet" type="text/css" href="libs/css/master.css">
+
+    <!-- IMPRIMIR CSS -->
+    <link rel="stylesheet" type="text/css" href="libs/css/imprimir.css" media="print">
 
     
     
@@ -50,7 +53,7 @@
                                 <li>
                                 <div class=" dropleft">
                                   <a href="#" class="dropdown avisos"  id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-placement="top" title="Mensagens">
-                                    12 <i class="fa fa-bell"></i>
+                                    107 <i class="fa fa-bell"></i>
                                   </a>
                                   <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
                                       <div id="content-1" class="contentScroll mCustomScrollbar">

@@ -14,6 +14,9 @@
                 
                   <a href="pfa.php" >PFA</a>
                   <a href="proposta-de-acao.php" >Proposta de Ação</a>
+                  <a href="proposta-de-acao-v2.php" >Proposta de Ação (V2)</a>
+                  <a href="proposta-de-acao-v3.php" >Proposta de Ação (V3)</a>
+                  <a href="proposta-de-acao-v4.php" >Proposta de Ação (V4)</a>
                 </div>
                 <a href="#demo4"  data-toggle="collapse" class="mn_sub" data-parent="#Menu">Portal TCE</a>
                   <div class="collapse" id="demo4">

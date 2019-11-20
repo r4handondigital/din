@@ -23,7 +23,7 @@
 
          <section class="sessao-conteudo">
            <h1 class="titulo">
-              Propostas de Ação
+              Propostas de Ação (V4)
 
             </h1>
          </section> 
@@ -46,50 +46,61 @@
                     <fieldset>
                       <legend>Cadastro</legend>
                      
-                        <p class="right-form">(*) Campos Obrigatórios</p>
+                      
                    
                         <div class="row">
                             <div class="col-sm-12 ">
-                              <input type="text" id="tituloproposta" name="tituloproposta" class="form-control form-control-lg" placeholder="Titulo da Proposta*" >
+                              <label for="tituloproposta">Titulo da Proposta</label>
+                              
+                              <input type="text" id="tituloproposta" name="tituloproposta" class="form-control " >
+                              
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-sm-12 col-md-3">
-                                 <select name="dimensaoproposta" class="form-control form-control-lg">
-                                  <option disabled selected>Dimensão da Proposta*</option>
+                                <label for="dimensaoproposta">Dimensão da Proposta</label>
+                                 <select id="dimensaoproposta" name="" class="form-control ">
+                                  <option disabled selected>Selecione</option>
                                   <option value="Seleção 01">Seleção 02</option>
                                   <option value="Seleção 02">Seleção 02</option>
                                   <option value="Seleção 03">Seleção 03</option>
                                 
                                 </select>
+                                <small class="form-text text-muted">(Campo Opcional)</small>
                               </div>
 
                                <div class="col-sm-12 col-md-3">
-                                 <select name="situacaoproposta" class="form-control form-control-lg">
-                                  <option disabled selected>Situação da Proposta*</option>
+                                <label for="situacaoproposta">Situação da Proposta</label>
+                                 <select id="situacaoproposta" name="" class="form-control ">
+                                  <option disabled selected>Selecione</option>
                                   <option value="Seleção 01">Seleção 02</option>
                                   <option value="Seleção 02">Seleção 02</option>
                                   <option value="Seleção 03">Seleção 03</option>
                                 
                                 </select>
+                               <small class="form-text text-muted">(Campo Opcional)</small>
                               </div>
 
                             <div class="col-sm-12 col-md-3">
-                                <select name="unidadetecnica" class="form-control form-control-lg">
-                                  <option disabled selected>Unidade Técnica*</option>
+                               <label for="unidadetecnica">Unidade Técnica</label>
+                                <select id="unidadetecnica" name="" class="form-control ">
+                                  <option disabled selected>Selecione</option>
                                   <option value="Diretoria Administrativa Direta">Diretoria Administrativa Direta</option>
                                   <option value="Diretoria Administrativa Indireta">Diretoria Administrativa Indireta</option>
                                   <option value="Diretoria Administrativa Municipal">Diretoria Administrativa Municipal</option>
                                 </select>
+                               <small class="form-text text-muted">(Campo Opcional)</small>
                               </div>
 
                               <div class="col-sm-12 col-md-3">
-                                 <select name="tipodetrabalho" class="form-control form-control-lg">
-                                  <option disabled selected>Tipo de Trabalho*</option>
+                                <label for="tipodetrabalho">Tipo de Trabalho</label>
+                                 <select id="tipodetrabalho" name="" class="form-control">
+                                  <option disabled selected>Selecione</option>
                                   <option value="Em Elaboração">Em Elaboração</option>
                                   <option value="Submetida para Análise">Submetida para Análise</option>
                                   <option value="Devolvida para Correção">Devolvida para Correção</option>
                                 </select>
+                               <small class="form-text text-muted">(Campo Opcional)</small>
                               </div>
 
                               
@@ -97,23 +108,36 @@
                             </div>
                               <div class="row">
                                 <div class="col-sm-12 ">
-                                   <textarea class="form-control form-control-lg" id="objetivoproposta" name="objetivoproposta" placeholder="Objetivo da Proposta*" rows="3"></textarea>
+                                  <label for="objetivoproposta">Objetivo da Proposta</label>
+                                   <textarea class="form-control " id="objetivoproposta" name="objetivoproposta"  rows="4"></textarea>
+                                  
                                 </div>                    
                               </div><!--.row-->
 
                               <div class="row">
                                 <div class="col-sm-12 ">
-                                   <textarea class="form-control form-control-lg" id="usuarioprevisto" name="usuarioprevisto" placeholder="Usuários Previstos*" rows="3"></textarea>
+                                  <label for="usuarioprevisto">Usuários Previstos</label>
+                                   <textarea class="form-control " id="usuarioprevisto" name="usuarioprevisto" rows="4"></textarea>
+                                  
                                 </div>                    
                               </div><!--.row-->
+
+                              <div class="row">
+
+                                  <div class="col-sm-12">
+
+                                     <div class="botoes-de-envio">
+                                        <button class="btn btn-primary" >Salvar</button>
+                                      </div>
+
+                                  </div>
+                              </div>
 
                           </fieldset>
                           
                          
 
-                         <div class="botoes-de-envio">
-                            <button class="btn btn-primary" >Salvar</button>
-                          </div>
+                        
 
                         </form>
 
