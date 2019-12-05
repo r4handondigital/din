@@ -1,6 +1,8 @@
 //
 // Updates "Select all" control in a data table
 //
+
+
 function updateDataTableSelectAllCtrl(table){
    var $table             = table.table().node();
    var $chkbox_all        = $('tbody input[type="checkbox"]', $table);
@@ -30,7 +32,7 @@ function updateDataTableSelectAllCtrl(table){
    }
 }
 
-$(document).ready(function(){
+
 
 
 
@@ -193,74 +195,13 @@ $(document).ready(function(){
     });
 
 
-
-/*$.validator.setDefaults( {
-      submitHandler: function () {
-        alert( "submitted!" );
-      }
-    } );*/
-    // VALIDAÇÃO DE FORMULÁRIO
-    /*$( "#FormCadastro" ).validate( {
-        rules: {
-          nome: "required",
-          situacao: "required",
-          ordem: "required",
-                  
-        },
-        messages: {
-          nome: "Informe a descrição da dimensão",
-          situacao: "Informe a situação da dimensão",
-          ordem: "Obrigatório"
-        },
-        errorElement: "em",
-        errorPlacement: function ( error, element ) {
-          // Add the `invalid-feedback` class to the error element
-          error.addClass( "invalid-feedback" );
-
-          if ( element.prop( "type" ) === "checkbox" ) {
-            error.insertAfter( element.next( "label" ) );
-          } else {
-            error.insertAfter( element );
-          }
-        },
-        highlight: function ( element, errorClass, validClass ) {
-          $( element ).addClass( "is-invalid" ).removeClass( "is-valid" );
-        },
-        unhighlight: function (element, errorClass, validClass) {
-          $( element ).addClass( "is-valid" ).removeClass( "is-invalid" );
-        }
-      } );
-
-  */
-
-
-
-    // EVENTOS SIMPLES
-    $( ".mn_sub" ).click(function() {
-      $( this ).toggleClass( "setnav" );
-    });
-
-    $( ".mn_sb_sb" ).click(function() {
-      $( this ).toggleClass( "atv" );
-    });
-
-    /*$( "#btx" ).click(function() {
-      $( "tr" ).removeClass( "selected" );
-      $("#alerta-confirmacao").addClass('ativo-alert');
-      $(".selec_geral,.itens_relatorios").each(function () {
-                    this.checked = false;
-                });
-    });*/
-
-    /*$( "#salvar_form" ).click(function() {
-       $("#alerta-confirmacao").addClass('ativo-alert');
-    });*/
-
      $.validator.setDefaults( {
       submitHandler: function () {
         $("#alerta-confirmacao").addClass('ativo-alert');
       }
-    } );      // VALIDAÇÃO DE FORMULÁRIO
+    } );      
+
+    // VALIDAÇÃO DE FORMULÁRIO
     $( "#FormCadastro" ).validate( {
         rules: {
           nome: "required",
@@ -341,18 +282,7 @@ $(document).ready(function(){
         });
 
 
-    // ENVIADO COM SUCESSO
-    
-   /* $('#envio_sucesso').on('click', function(){
-        Swal.fire({
-          title: 'Sucesso!',
-          text: 'Seu cadastro foi atualizado.',
-          type: 'success',
-          confirmButtonText: 'Fechar'
-        })
-    });*/
-
-   
+      
 
     // MODAL RECUPERAR SENHA 
     $('.btn-click').on('click', function(){
@@ -402,7 +332,6 @@ $(document).ready(function(){
         modal: true 
       });
 
-}); // FIM 
 
 
 // MENU MOBILE

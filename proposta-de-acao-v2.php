@@ -21,6 +21,8 @@
         </nav>
         <!-- MIOLO DE PÃO -->
 
+
+
          <section class="sessao-conteudo">
            <h1 class="titulo">
               Propostas de Ação (V2)
@@ -28,7 +30,7 @@
             </h1>
          </section> 
 
-        
+        <div id="content-2" class="contentScroll mCustomScrollbar">
 
             <div class="row">
                 <div class="col-sm-12">
@@ -139,7 +141,7 @@
                 </div>
                 
             </div>
-        
+        </div>
       </div><!--.col-md-10 GERAL DO MIOLO-->
 
 

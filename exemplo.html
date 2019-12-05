@@ -19,7 +19,7 @@
   
     
     
-
+ 
 
     <title>PORTAL e-TCE</title>
   </head>
@@ -216,34 +216,99 @@
               <!-- MIOLO DE PÃO -->
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="#"><i class="fa fa-home"></i></a></li>
+                   <li class="breadcrumb-item"><a href="inicial.html"><i class="fa fa-home"></i></a></li>
+                  <li class="breadcrumb-item"><a >Admin</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Dimensão</li>
                 
                 </ol>
               </nav>
               <!-- MIOLO DE PÃO -->
 
+               <section class="sessao-conteudo">
+                 <h1 class="titulo">
+                    Dimensões Cadastradas
+                    <a href="nova-dimensao.html" class="btn btn-primary botao-titulo">Nova Dimensão</a>
+                  </h1>
+
                 <div class="row">
-                    <div class="col-sm-12">
-                      <div class="alert-user alert alert-warning alert-dismissible fade show" role="alert">
-                        <h1>Você tem 107 alertas precisando de sua atenção!</h1> 
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
+                  <div class="col-sm-12">
+
+                    
+                   <!-- ************** CSS ********** --> 
+                    <style type="text/css" media="screen">
+                      .boxpf,.boxpm{
+                        display: none;
+                      } 
+                      
+                      .boxpf.modelo1{
+                        display: block; !important;
+                      }
+
+                      
+                      .boxpm.modelo2{
+                        display: block; !important;
+                      }
 
 
-                        <div class="hello-user alert alert-success fade show" role="alert">
-                          <!--<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                          </button>-->
-                          <h4 class="alert-heading">Bem-vindo ao Sistema do Plano de Fiscalização Anual</h4>
+                    </style>
+                    
+                    <!-- ************** CSS ********** --> 
+
+
+
+                    <!-- ************** CÓDIGO ********** -->   
+                                <select id="txtSubtitulo">
+                                    <option value="" disabled selected>Selecione o ano</option>
+                                    <option value="1">2017</option>
+                                    <option value="2">2018</option>
+                                    
+                                </select>
+                               
+                           
+
+                         
+                                <button onclick="gravar()">Buscar</button>
                           
-                        </div><!-- / MENSAGEM -->
+                            
+                            
+                            <div id="divPRF"> </div>
+                            <div id="divPMN"> </div>
+                    <!-- ************** CÓDIGO ********** -->
 
-                    </div>
-                </div><!-- / row DAS MENSAGENS-->
+                    
+                      
+                       <!-- ************** JAVASCRIPT ********** -->
+                     <script>
 
-                
+                      function gravar() {
+                         
+                          var subtitulo = document.getElementById("txtSubtitulo").value;
+                          var divg = document.getElementById("divPRF");
+                          var divr = document.getElementById("divPMN");
+                         
+
+                          // SELECT PRF
+                          divg.innerHTML = "<div class='boxpf modelo" + subtitulo + "'><select> <option value=''> Escolha uma op&ccedil;&atilde;o </option>           <% MontaMenu('ALG_AlertaTipo') While not rsAux.Eof %> <option value='<%= rsAux('IdAlertaTipo') %>''> <%=rsAux("DescricaoTipo")%> </option> <% rsAux.movenext wend %> </select></div>";
+                          
+                          // SELECT PMN
+                          divr.innerHTML = "<div class='boxpm modelo" + subtitulo + "'><div class='boxpf modelo" + subtitulo + "'><select> <option value=''> Escolha uma op&ccedil;&atilde;o </option>           <% MontaMenu('ALG_AlertaTipo') While not rsAux.Eof %> <option value='<%= rsAux('IdAlertaTipo') %>''> <%=rsAux("DescricaoTipo")%> </option> <% rsAux.movenext wend %> </select></div></div>";
+                         
+
+                         
+                      }
+                      
+                   
+
+                      </script>
+
+                      <!-- ************** JAVASCRIPT ********** -->
+
+
+                  </div><!-- col-sm-12 -->
+                </div><!--.row-->
+            
+               </section> 
+
                 
             </div><!--.col-md-10 GERAL DO MIOLO-->
 
@@ -262,8 +327,29 @@
     <!-- Principal JS -->
     <script src="libs/js/principal.js"></script>
 
+
+
+
     <script>
 
+    function gravar() {
+       
+        var subtitulo = document.getElementById("txtSubtitulo").value;
+        var divg = document.getElementById("divPRF");
+        var divr = document.getElementById("divPMN");
+       
+
+        // SELECT PRF
+        divg.innerHTML = "<div class='boxpf modelo" + subtitulo + "'><select> <option value=''> Escolha uma op&ccedil;&atilde;o </option>           <% MontaMenu('ALG_AlertaTipo') While not rsAux.Eof %> <option value='<%= rsAux('IdAlertaTipo') %>''> <%=rsAux("DescricaoTipo")%> </option> <% rsAux.movenext wend %> </select></div>";
+        
+        // SELECT PMN
+        divr.innerHTML = "<div class='boxpm modelo" + subtitulo + "'><div class='boxpf modelo" + subtitulo + "'><select> <option value=''> Escolha uma op&ccedil;&atilde;o </option>           <% MontaMenu('ALG_AlertaTipo') While not rsAux.Eof %> <option value='<%= rsAux('IdAlertaTipo') %>''> <%=rsAux("DescricaoTipo")%> </option> <% rsAux.movenext wend %> </select></div></div>";
+       
+
+       
+    }
+    
+ 
 
     </script>
   </body>

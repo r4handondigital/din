@@ -15,9 +15,7 @@
     <!-- Principal CSS -->
     <link rel="stylesheet" type="text/css" href="libs/css/master.css">
 
-    <!-- IMPRIMIR CSS -->
-    <link rel="stylesheet" type="text/css" href="libs/css/imprimir.css" media="print">
-
+  
     
     
 

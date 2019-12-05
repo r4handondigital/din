@@ -113,6 +113,7 @@ body.bg-cinza{
   text-align: left;
   text-transform: uppercase;
   font-size: 10px;
+  margin-bottom: 5px;
 }
 
 form label{
@@ -556,6 +557,16 @@ a.avisos{
     width: 296px;
 }
 
+#content-2.contentScroll {
+    height: 650px;
+    width: 100%;
+    
+}
+
+#mCSB_2_container{
+  padding-right: 20px; 
+}
+
 #content-tabela.contentScroll {
     height: 600px;
     width: 100%;
@@ -679,6 +690,11 @@ a.mn_sub.no_sub::before{
 #geral-conteudo, #geral-conteudo a{
   color: #545047;
 }
+
+#geral-conteudo h3{
+  font-size: 20px;
+  color: #347D6B;
+}
 /* MIOLO */
 
 #alerta-confirmacao{
@@ -715,7 +731,7 @@ a.mn_sub.no_sub::before{
   text-align: center;
   padding: 20px 40px;
 }
-/*BOXES DE INFORMAÇÕES*/
+/*BOXES DE INFORMAÃ‡Ã•ES*/
 
 
 
@@ -924,10 +940,19 @@ table td.sorting_1{
 .swal2-actions button{
   margin:0 5px;
 }
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff !important;
+    font-weight: bold;
+    background-color: #347D6B;
+}
+
+.nav-pills .nav-link.active{
+  padding-left: 30px !important;
+}
 
 fieldset{
-  margin:20px 0;
-  padding: 20px 20px 0px 20px;
+  margin: 0 0 30px 0;
+  padding: 0px 20px 0px 20px;
   border: 1px solid #E2E3E5 !important;
   border-radius:4px;
 }
@@ -938,6 +963,40 @@ legend{
   text-transform: uppercase;
   color: #D9D9D9;
 }
+
+#aba-form .nav-tabs .nav-link.active{
+  font-weight: bold;
+  opacity: 1;
+}
+
+#aba-form .nav-tabs .nav-link{
+  opacity: 0.4;
+}
+
+#aba-form .nav-tabs .nav-item{
+  width: 100%;
+}
+#aba-form{
+  border-right: 1px solid #dee2e6 ;
+}
+#aba-form .nav-tabs{
+  
+  border-bottom: 1px solid #fff ;
+}
+
+#aba-form .nav-tabs .nav-item {
+  
+    margin-bottom: 0px;
+    position: relative;
+    right: -16px;
+}
+
+#aba-form .nav-tabs .nav-item.show .nav-link,#aba-form .nav-tabs .nav-link.active {
+    color: #347D6B;
+    background-color: #fff;
+    border-color: #dee2e6 #fff #dee2e6 #dee2e6;
+}
+
 
 .gj-picker-bootstrap [role=header] {
     background: #34695C;
@@ -978,7 +1037,7 @@ legend{
   border:1px solid #D9D9D9;
   text-align: left !important;
 }
-/*  TESTES DE RESOLUÃ‡Ã•ES PADRÃ•ES 
+/*  TESTES DE RESOLUÃƒâ€¡Ãƒâ€¢ES PADRÃƒâ€¢ES 
 
 4k - Acima de 1920
 PC - 1600X1200
@@ -1272,4 +1331,48 @@ form .col-auto {
 }
 .contraste .bloco-tabela-dados .dataTables_wrapper .dataTables_filter input{
   background:#fff url(../img/search-solid.svg) no-repeat 7px center;
+}
+
+/*CSS para impressÃ£o*/
+@media print {
+
+
+body {
+    -webkit-print-color-adjust: exact;
+    overflow: hidden;
+}
+
+header {
+  background-color: #21483F !important;
+  margin-bottom: 20px;
+}
+
+.dataTables_info,.dataTables_paginate,thead tr th:last-child,tbody tr td:last-child,input[type=checkbox],.dataTables_length,.dataTables_filter,#bg-menu,.breadcrumb,.box-informacoes-usuario,.btn,.legenda-tabela{
+  display: none !important;
+}
+
+#geral-conteudo,.table,.bloco-tabela-dados.dataTables_wrapper,.col-sm-12{
+  width: 100% !important;
+  padding: 0 !important;
+  margin:0 !important;
+  max-width: 100% !important;
+}
+.col-md-10{
+  flex: 100%;
+}
+.porta-etce{
+  height: 115px;
+}
+
+table tr{
+  background: #D9D9D9;
+}
+table,td,th{
+  border: 1px solid #ddd;
+}
+
+table.dataTable thead .sorting,table.dataTable thead .sorting_asc{
+  background: none !important;
+}
+
 }
