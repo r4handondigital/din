@@ -1037,6 +1037,34 @@ legend{
   border:1px solid #D9D9D9;
   text-align: left !important;
 }
+
+.card-header{
+  padding: 0;
+  position: relative;
+}
+
+.card-header:hover{
+  background-color:rgba(0,0,0,.05); 
+}
+.card-header h5 .btn-link {
+  padding: .75rem 1.25rem;
+    font-weight: bold;
+    color: #347D6B;
+    width: 100%;
+    
+    text-align: left;
+    text-decoration: none;
+}
+
+.card-header::after {
+    background: url(../img/arrow-ac.svg) no-repeat right center;
+    position: absolute;
+    content: '';
+    width: 24px;
+    height: 24px;
+    right: 17px;
+    top: 15px;
+}
 /*  TESTES DE RESOLUÃƒâ€¡Ãƒâ€¢ES PADRÃƒâ€¢ES 
 
 4k - Acima de 1920
