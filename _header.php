@@ -16,31 +16,31 @@
     <link rel="stylesheet" type="text/css" href="libs/css/master.css">
 
   
-    
+     
     
 
 
     <title>PORTAL e-TCE</title>
   </head>
-  <body class="bg-cinza">
+  <body >
     
     <header>
         <div class="container-fluid">
             <div class="row" >
-                <div class="col" id="logo-blc">
+                <div class="col-md-3 col-xl-2" id="logo-blc">
                     
-                    <a href="inicial.php" id="logo"><img src="libs/tce-rn.svg" alt="Logo do TCERN"></a>
+                    <a href="inicial.php" id="logo"></a>
 
                 </div><!--#logo-blc-->
-                <div class="col-md-10 col-sm-8" id="inf_superior">
+                <div class="col-md-9 col-xl-10 col-sm-8" id="inf_superior">
                       
                       <div class="porta-etce">
-                           <h2>PORTAL<span>e-TCE</span></h2>    
+                          <!-- <h2>PORTAL<span>e-TCE</span></h2>    -->
                       </div><!--.porta-etce-->
 
                       <h3 class="nome-sistema">
-                          PLANO DE 
-                          <span>FISCALIZAÇÃO ANUAL</span>
+                          TCEADMIN 
+                          <span>CORE</span>
                        </h3><!--nome-sistema-->
 
 
@@ -50,9 +50,9 @@
                               <ul class="infor-user">
                                 <li>
                                 <div class=" dropleft">
-                                  <a href="#" class="dropdown avisos"  id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-placement="top" title="Mensagens">
+                                 <!-- <a href="#" class="dropdown avisos"  id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-placement="top" title="Mensagens">
                                     107 <i class="fa fa-bell"></i>
-                                  </a>
+                                  </a>-->
                                   <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
                                       <div id="content-1" class="contentScroll mCustomScrollbar">
                                         <ul class="infor-alertas">

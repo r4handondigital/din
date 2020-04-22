@@ -1,6 +1,6 @@
 <?php include ('_header.php'); ?>
 
-<div class="container-fluid">
+<div class="bg-cinza container-fluid"> 
   
   <div class="row" id="bloco-site">
       
@@ -9,7 +9,7 @@
        <?php include ('_menu.php'); ?>
 
       </div><!-- /col  // Menu lateral (DESKTOP) -->
-
+ 
       <div class="col-md-10" id="geral-conteudo">
         <!-- MIOLO DE PÃO -->
         <nav aria-label="breadcrumb">
@@ -30,24 +30,7 @@
          </section> 
 
         
-
-            <div class="row">
-                <div class="col-sm-12">
-                 
-
-<div class="accordion" id="accordionExample">
-  <div class="card">
-    <div class="card-header" id="headingOne">
-      <h5 class="mb-0">
-        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          Formulário #1
-        </button>
-      </h5>
-    </div>
-
-    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-      <div class="card-body">
-         <!-- ALERTA DE FORM  ENVIADO -->
+                  <!-- ALERTA DE FORM  ENVIADO -->
                         <div id="alerta-confirmacao" class="alert alert-success alert-dismissible fade show" role="alert">
                             <strong>AÇÃO REALIZADA COM SUCESSO!</strong> 
                             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -56,124 +39,123 @@
                           </div>
                     <!-- FIM ALERTA DE FORM  ENVIADO -->
 
+            <div class="row">
+                <div class="col-sm-12">
+                 
+
                   <form id="FormCadastro" action="#" method="get" >
-
                     <fieldset>
-                      <legend>Dados do PFA</legend>
-                        
-                        
-                            <div class="row">
-                                <div class="col-sm-12 col-md-8">
-                                    <input type="text" id="descricaopfa" name="descricaopfa" class="form-control form-control-lg" placeholder="Descrição do Plano de Fiscalização" >
-                                     
-                                  </div>
+                        <legend>Cadastro</legend>
+                     
+                        <p class="right-form">(*) Campos Obrigatórios</p>
 
-                                  <div class="col-sm-6 col-md-2">
-                                     <input type="text" id="datainicio" name="datainicio" placeholder="Data de Início" class="datainicio form-control form-control-lg" />
-                                  </div>
+                            <div class="accordion" id="accordionExample">
+                              <div class="card">
+                                <div class="card-header" id="headingOne">
+                                  <h5 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><span class="arrow-sp"></span>
+                                      PROCESSO
+                                    </button>
+                                  </h5>
+                                </div>
 
-                                  <div class="col-sm-6 col-md-2">
-                                     <input type="text" id="datafinal" name="datafinal" placeholder="Data Final" class="datafim form-control form-control-lg" />
-                                  </div>
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                  <div class="card-body">
                                     
-                                
-                                  
-                                 
-                            </div><!--.row-->
+                                    <div class="row">
 
-                          </fieldset>
+                                        <div class="col-sm-12 col-md-4">
+                                          <label for="tituloproposta">Nº Processo *</label>
+                                          <input type="text" id="tituloproposta" name="tituloproposta" class="form-control " >
+                                        </div>
+
+                                        <div class="col-sm-12 col-md-4">
+                                          <label for="tituloproposta">Ano Processo *</label>
+                                          <input type="text" id="tituloproposta" name="tituloproposta" class="form-control " >
+                                        </div>
+
+                                        <div class="col-sm-12 col-md-4">
+                                         <label for="situacaoproposta">Situação da Proposta *</label>
+                                         <select id="situacaoproposta" name="situacaoproposta" class="form-control ">
+                                          <option disabled selected>Selecione</option>
+                                          <option value="Seleção 01">Seleção 02</option>
+                                          <option value="Seleção 02">Seleção 02</option>
+                                          <option value="Seleção 03">Seleção 03</option>
+                                        </select>
+                                        </div>
+                                    </div>
+
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                  <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><span class="arrow-sp"></span>
+                                     ASSOCIADOS
+                                    </button>
+                                  </h5>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                  <div class="card-body">
+                                    <div class="row">
+                                      <div class="col-sm-12 ">
+                                           <label for="situacaoproposta">INTERESSADO</label>
+                                           <select id="situacaoproposta" name="situacaoproposta" class="form-control ">
+                                            <option disabled selected>Selecione</option>
+                                            <option value="Seleção 01">Seleção 02</option>
+                                            <option value="Seleção 02">Seleção 02</option>
+                                            <option value="Seleção 03">Seleção 03</option>
+                                          </select>
+                                      </div>
+                                    </div><!--.row-->
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-header" id="headingThree">
+                                  <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><span class="arrow-sp"></span>
+                                      DADOS DA COMUNICAÇÃO
+                                    </button>
+                                  </h5>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                  <div class="card-body">
+                                    <div class="row">
+                                      <div class="col-sm-12 ">
+                                           <label for="situacaoproposta">MODELO MALA DIRETA</label>
+                                           <select id="situacaoproposta" name="situacaoproposta" class="form-control ">
+                                            <option disabled selected>Selecione</option>
+                                            <option value="Seleção 01">Seleção 02</option>
+                                            <option value="Seleção 02">Seleção 02</option>
+                                            <option value="Seleção 03">Seleção 03</option>
+                                          </select>
+                                      </div>
+                                    </div><!--.row-->
+
+                               
+
+                                  </div>
+                                </div>
+                              </div>
+                            </div><!--accordion-->
+
+                             <div class="row">
+
+                                  <div class="col-sm-12">
+
+                                     <div class="botoes-de-envio">
+                                        <button class="btn btn-sm btn-primary">Salvar</button>
+                                      </div>
                           
-                          <fieldset>
-                            <legend>Dados do Processo</legend>
-
-                              <div class="row">
-                                  <div class="col-sm-4 ">
-                                    <input type="number" name="numero" class="form-control form-control-lg" placeholder="Número" >
-                                     
-                                  </div>
-
-                                  <div class="col-sm-4">
-                                    <select name="ano" class="form-control form-control-lg">
-                                      <option disabled selected>Ano</option>
-                                      <option value="2017">2017</option>
-                                      <option value="2018">2018</option>
-                                      <option value="2019">2019</option>
-                                    </select>
-                                  </div>
-
-                                  <div class="col-sm-4">
-                                    <button class="btn btn-primary btn-lg " >Pesquisar</button>
-                                  </div>
-
-                              </div>
-                             
-                              <div class="row">
-                                  <div class="col-sm-6 col-md-3">
-                                    <input type="text" name="tipo" class="form-control form-control-lg" placeholder="Tipo de Processo" disabled>
-                                     
-                                  </div>
-                                  <div class="col-sm-6 col-md-3">
-                                    <input type="text" name="interessado" class="form-control form-control-lg" placeholder="Interessado" disabled>
-                                     
-                                  </div>
-                                  <div class="col-sm-6 col-md-3">
-                                    <input type="text" name="relator" class="form-control form-control-lg" placeholder="Relator" disabled>
-                                     
-                                  </div>
-                                  <div class="col-sm-6 col-md-3">
-                                    <input type="text" name="setor" class="form-control form-control-lg" placeholder="Setor Atual" disabled>
-                                     
                                   </div>
                               </div>
-                          </fieldset>
-                         
 
-                         <div class="botoes-de-envio">
-                            <button class="btn btn-primary " >Salvar </button>
-                          </div>
-
-                        </form>
-
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header" id="headingTwo">
-      <h5 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          Formulário #2
-        </button>
-      </h5>
-    </div>
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-      <div class="card-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header" id="headingThree">
-      <h5 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          Formulário #3
-        </button>
-      </h5>
-    </div>
-    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-      <div class="card-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
-    </div>
-  </div>
-</div>
-
-
-                
-
-                    
-                </div>
-                
-            </div>
+                      </fieldset>
+                    </form>
+                </div><!--col-sm-12 -->              
+            </div><!--row-->    
         
       </div><!--.col-md-10 GERAL DO MIOLO-->
 
@@ -182,7 +164,6 @@
 
 </div><!-- /container-fluid // Engloba todo o conteudo do projeto menos o topo-->
           
-
 <?php include ('_footer.php'); ?>
 
 <script type="text/javascript">

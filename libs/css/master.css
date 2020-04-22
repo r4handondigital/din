@@ -59,8 +59,8 @@ a:hover{
   opacity: 0.7;
 }
 
-body.bg-cinza{
-  background: url(../img/bg-textura.svg) repeat-x center top;
+.bg-cinza{
+  background: url(../img/bg-textura.svg) center -120px repeat-x;
 }
 
 .container-fluid{
@@ -239,10 +239,10 @@ form label{
   margin-top: 0;
 }
 
-
+/*
 #bg-menu,#logo-blc{
   max-width: 215px;
-}
+}*/
 
 #bg-menu, header{
   background: #21483F;
@@ -276,16 +276,22 @@ div.dataTables_wrapper span.select-item {
 
 /* TOPO */
 header{
-  border-bottom: 4px solid #DEA400;
-  height: 120px;
+  border-bottom: 4px solid #dea400;
+    height: 120px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 998;
 }
 
 
 #logo{
-  display: block;
-  width: 100%;
-  text-align: center;
-  margin: 15px auto;
+ display: block;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    margin: 15px auto;
+    background: url(../img/logotipo_tce.svg) center center no-repeat;
 }
 
 #inf_superior{
@@ -432,11 +438,14 @@ header{
 }
 
 .nome-sistema{
- font-size: 26px;
+font-size: 26px;
     position: absolute;
     color: #fff;
-    left: 205px;
-    bottom: 16px;
+    left: 240px;
+    top: 32px;
+    text-transform: uppercase;
+    width: 8em;
+    word-break: break-word;
 }
 .nome-sistema span{
   display: block;
@@ -444,19 +453,18 @@ header{
 
 .nome-sistema::before {
     content: '';
-    background: url(../img/business.svg) no-repeat;
-    background-size: cover;
-    width: 48px;
+    background: url(../img/ico-tce-admin.svg) 0 0/cover no-repeat;
+    width: 103px;
     position: absolute;
-    left: -60px;
-    top: 7px;
-    height: 48px;
+    left: -110px;
+    top: -4px;
+    height: 67px;
     display: block;
 }
 
 .box-informacoes-usuario{
   position: absolute;
-  right: 0;
+  right: 20px;
   top: 18px;
 }
 
@@ -475,7 +483,7 @@ header{
 }
 
 .box-informacoes-usuario img{
-  border-radius: 50%;
+  border-radius: 10%;
   width:76px;
 }
 
@@ -604,7 +612,7 @@ a.avisos{
 #Menu a{
   display: block;
   color: #fff;
-  font-size: 14px;
+  font-size: .8rem;
   position: relative;
 }
 
@@ -854,6 +862,10 @@ a.mn_sub.no_sub::before{
     color: #ccc;
 }
 
+table{
+  text-align: center;
+}
+
 .bloco-tabela-dados .dataTables_wrapper .dataTables_filter{
   float: left;
   margin-left: 135px;
@@ -886,7 +898,27 @@ table td.sorting_1{
   text-align: left !important;
 }
 
+.gj-datepicker-bootstrap [role=right-icon] button {
+    width: 38px;
+    position: relative;
+    border: 1px solid #ced4da;
+    top: -5px;
+}
 
+.titulos-forms {
+    font-size: 15px;
+    color: #347d6b;
+    margin: 0;
+    text-transform: uppercase;
+    border-bottom: 2px solid;
+    padding-bottom: 10px;
+}
+.clr{
+  color: #ccc;
+}
+.para-filtro {
+    margin-top: 34px;
+}
 .bloco-tabela-dados table.dataTable.display tbody tr td{
   text-align: center;
 }
@@ -1056,8 +1088,11 @@ legend{
     text-decoration: none;
 }
 
-.card-header::after {
-    background: url(../img/arrow-ac.svg) no-repeat right center;
+.card-header{
+  position: relative;
+}
+.arrow-sp{
+  background: url(../img/arrow-ac.png) no-repeat right center;
     position: absolute;
     content: '';
     width: 24px;
@@ -1065,6 +1100,24 @@ legend{
     right: 17px;
     top: 15px;
 }
+
+.accordion{
+  margin: 30px 0;
+}
+.btn-link[aria-expanded="false"] .arrow-sp {
+    
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+.btn-link[aria-expanded="true"] .arrow-sp{
+ 
+  -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+
 /*  TESTES DE RESOLUÃƒâ€¡Ãƒâ€¢ES PADRÃƒâ€¢ES 
 
 4k - Acima de 1920
