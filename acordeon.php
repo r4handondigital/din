@@ -49,20 +49,13 @@
                      
                         <p class="right-form">(*) Campos Obrigatórios</p>
 
-                            <div class="accordion" id="accordionExample">
-                              <div class="card">
-                                <div class="card-header" id="headingOne">
-                                  <h5 class="mb-0">
-                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><span class="arrow-sp"></span>
-                                      PROCESSO
-                                    </button>
-                                  </h5>
-                                </div>
-
-                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                                  <div class="card-body">
-                                    
-                                    <div class="row">
+                          
+                          <div class="row">
+                            <div class="col-sm-12">
+                             <div class="box-movel-acordeon">
+                              <h5 class="acordeon">PROCESSO <span class="arrow-sp"></span></h5>
+                              <div class="acordeon">
+                                <div class="row">
 
                                         <div class="col-sm-12 col-md-4">
                                           <label for="tituloproposta">Nº Processo *</label>
@@ -84,23 +77,14 @@
                                         </select>
                                         </div>
                                     </div>
-
-                                  </div>
-                                </div>
                               </div>
-                              <div class="card">
-                                <div class="card-header" id="headingTwo">
-                                  <h5 class="mb-0">
-                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><span class="arrow-sp"></span>
-                                     ASSOCIADOS
-                                    </button>
-                                  </h5>
-                                </div>
-                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                                  <div class="card-body">
-                                    <div class="row">
+                            </div><!--.box-movel-acordeon-->
+                            <div class="box-movel-acordeon">
+                              <h5 class="acordeon">ASSOCIADOS <span class="arrow-sp"></span></h5>
+                              <div class="acordeon">
+                                <div class="row">
                                       <div class="col-sm-12 ">
-                                           <label for="situacaoproposta">INTERESSADO</label>
+                                           <label for="situacaoproposta">INTERESSADO </label>
                                            <select id="situacaoproposta" name="situacaoproposta" class="form-control ">
                                             <option disabled selected>Selecione</option>
                                             <option value="Seleção 01">Seleção 02</option>
@@ -109,20 +93,12 @@
                                           </select>
                                       </div>
                                     </div><!--.row-->
-                                  </div>
-                                </div>
                               </div>
-                              <div class="card">
-                                <div class="card-header" id="headingThree">
-                                  <h5 class="mb-0">
-                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><span class="arrow-sp"></span>
-                                      DADOS DA COMUNICAÇÃO
-                                    </button>
-                                  </h5>
-                                </div>
-                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                                  <div class="card-body">
-                                    <div class="row">
+                            </div><!--.box-movel-acordeon-->
+                            <div class="box-movel-acordeon">
+                              <h5 class="acordeon">DADOS DA COMUNICAÇÃO <span class="arrow-sp"></span></h5>
+                              <div class="acordeon">
+                                 <div class="row">
                                       <div class="col-sm-12 ">
                                            <label for="situacaoproposta">MODELO MALA DIRETA</label>
                                            <select id="situacaoproposta" name="situacaoproposta" class="form-control ">
@@ -133,13 +109,11 @@
                                           </select>
                                       </div>
                                     </div><!--.row-->
-
-                               
-
-                                  </div>
-                                </div>
                               </div>
-                            </div><!--accordion-->
+                            </div><!--.box-movel-acordeon-->
+  
+                          </div>
+                        </div>
 
                              <div class="row">
 
@@ -156,6 +130,8 @@
                     </form>
                 </div><!--col-sm-12 -->              
             </div><!--row-->    
+
+         
         
       </div><!--.col-md-10 GERAL DO MIOLO-->
 
@@ -167,6 +143,14 @@
 <?php include ('_footer.php'); ?>
 
 <script type="text/javascript">
+
+  $('h5.acordeon').click(function(){
+    $(this).parent().find('div.acordeon').slideToggle("slow");
+    $(this).toggleClass('atvmod');
+   
+  });
+
+
     $.validator.setDefaults( {
       submitHandler: function () {
         Swal.fire({

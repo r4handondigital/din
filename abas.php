@@ -35,7 +35,7 @@
 
             <div class="col-sm-12">
               <div class="row">
-                  <nav class="col-md-3" id="aba-form">
+                  <nav class="col-sm-12" id="aba-form">
                     
                       <div class="nav nav-tabs" id="nav-tab" role="tablist">
                         <a class="nav-item nav-link active" id="nav-tab-1" data-toggle="tab" href="#nav-1" role="tab" aria-controls="nav-1" aria-selected="true">Dados da Ação</a>
@@ -48,7 +48,7 @@
                       </div>
                     
                   </nav>
-                <div class="col-md-9">
+                <div class="col-sm-12">
 
            <!-- <div id="content-2" class="contentScroll mCustomScrollbar">-->
                 <form id="FormCadastro" action="#" method="get" >

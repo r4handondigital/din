@@ -1005,13 +1005,37 @@ legend{
   opacity: 0.4;
 }
 
-#aba-form .nav-tabs .nav-item{
+/*#aba-form .nav-tabs .nav-item{
   width: 100%;
 }
 #aba-form{
   border-right: 1px solid #dee2e6 ;
 }
-#aba-form .nav-tabs{
+*/
+.acordeon{
+  padding: 20px;
+}
+h5.acordeon{ cursor: pointer;
+color: #347D6B;
+background-color: rgba(0,0,0,.03);
+    border-bottom: 0px ;  
+    margin-bottom: 0;
+    font-size: 16px;
+    padding: 15px;
+    position: relative;
+
+}
+.box-movel-acordeon{
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: 3px;
+
+}
+div.acordeon{ display: none; }
+
+.nav-tabs{
+  margin-bottom: 20px;
+}
+#aba-form {
   
   border-bottom: 1px solid #fff ;
 }
@@ -1025,8 +1049,9 @@ legend{
 
 #aba-form .nav-tabs .nav-item.show .nav-link,#aba-form .nav-tabs .nav-link.active {
     color: #347D6B;
+    margin-bottom: -1px;
     background-color: #fff;
-    border-color: #dee2e6 #fff #dee2e6 #dee2e6;
+    border-color: #dee2e6 #dee2e6 #fff #dee2e6;
 }
 
 
@@ -1104,7 +1129,7 @@ legend{
 .accordion{
   margin: 30px 0;
 }
-.btn-link[aria-expanded="false"] .arrow-sp {
+/*.btn-link[aria-expanded="false"] .arrow-sp {
     
     -webkit-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
@@ -1116,7 +1141,24 @@ legend{
   -webkit-transform: rotate(-180deg);
     -ms-transform: rotate(-180deg);
     transform: rotate(-180deg);
+}*/
+h5.acordeon .arrow-sp{
+ 
+  -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
 }
+
+
+h5.acordeon.atvmod .arrow-sp {
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+
+    
+}
+
+
 
 /*  TESTES DE RESOLUÃƒâ€¡Ãƒâ€¢ES PADRÃƒâ€¢ES 
 

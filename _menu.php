@@ -21,13 +21,13 @@
                   <div class="collapse" id="demo4">
                     <a href="inicial-portal.php">Inicial</a>
                    
-                    <a href="icones.php" class="mn_sub no_sub" >Icones</a>
+                    
 
                   <a href="formulario-abas.php" class="mn_sub no_sub" >Formulário ABAS</a>
                   </div>-->
                 
                 
-
+                    <a href="icones.php" class="mn_sub no_sub" >Icones</a>
                    <a href="abas.php" class="mn_sub no_sub" >Abas</a>
                    <a href="acordeon.php" class="mn_sub no_sub" >Acordeon</a>
                  

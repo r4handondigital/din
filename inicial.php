@@ -1,6 +1,6 @@
 <?php include ('_header.php'); ?>
 
-    <div class="container-fluid">
+    <div class="bg-cinza container-fluid">
       
         <div class="row" id="bloco-site">
             
