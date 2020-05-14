@@ -2,20 +2,20 @@
 
 <div class="bg-cinza container-fluid"> 
   
-  <div class="row" id="bloco-site">
+  <div class="row flex-xl-nowrap" id="bloco-site">
       
-    <div class="col mov-menu" id="bg-menu">
+    <div class="col-md-3 col-xl-2 mov-menu" id="bg-menu">
 
        <?php include ('_menu.php'); ?>
 
       </div><!-- /col  // Menu lateral (DESKTOP) -->
  
-      <div class="col-md-10" id="geral-conteudo">
+      <div class="col-md-9 col-xl-10 col-sm-12" id="geral-conteudo">
         <!-- MIOLO DE PÃO -->
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
              <li class="breadcrumb-item"><a href="inicial.php"><i class="fa fa-home"></i></a></li>
-            <li class="breadcrumb-item"><a href="pfa.php">PFA</a></li>
+            <li class="breadcrumb-item"><a href="#">Modelos de Página</a></li>
            
             <li class="breadcrumb-item active" aria-current="page">Acordeon</li>
           
@@ -52,55 +52,106 @@
                           
                           <div class="row">
                             <div class="col-sm-12">
-                             <div class="box-movel-acordeon">
-                              <h5 class="acordeon">PROCESSO <span class="arrow-sp"></span></h5>
+                             <div class="box-movel-acordeon firstac">
+                              <h5 class="acordeon atvmod" id="lkprocesso">DADOS PESSOAIS<span class="arrow-sp"><i class="fas fa-chevron-down"></i></span></h5>
                               <div class="acordeon">
+
                                 <div class="row">
+                                    <div class="col-sm-12 ">
+                                          <label for="tituloproposta">Nome*</label>
+                                          <input type="text" id="tituloproposta" name="tituloproposta" class="form-control " >
+                                        </div>
+                                </div>
 
-                                        <div class="col-sm-12 col-md-4">
-                                          <label for="tituloproposta">Nº Processo *</label>
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-6">
+                                          <label for="tituloproposta">RG*</label>
                                           <input type="text" id="tituloproposta" name="tituloproposta" class="form-control " >
                                         </div>
 
-                                        <div class="col-sm-12 col-md-4">
-                                          <label for="tituloproposta">Ano Processo *</label>
+                                        <div class="col-sm-12 col-md-6">
+                                          <label for="tituloproposta">CPF*</label>
+                                          <input type="text" id="tituloproposta" name="tituloproposta" class="form-control " >
+                                        </div>
+                                </div>
+
+                                <div class="row">                                       
+
+                                        <div class="col-sm-12 col-md-6">
+                                          <label for="tituloproposta">E-mail*</label>
                                           <input type="text" id="tituloproposta" name="tituloproposta" class="form-control " >
                                         </div>
 
-                                        <div class="col-sm-12 col-md-4">
-                                         <label for="situacaoproposta">Situação da Proposta *</label>
+                                        <div class="col-sm-12 col-md-6">
+                                         <label for="situacaoproposta">Sexo *</label>
                                          <select id="situacaoproposta" name="situacaoproposta" class="form-control ">
                                           <option disabled selected>Selecione</option>
-                                          <option value="Seleção 01">Seleção 02</option>
-                                          <option value="Seleção 02">Seleção 02</option>
-                                          <option value="Seleção 03">Seleção 03</option>
+                                          <option value="Seleção 01">Masculino</option>
+                                          <option value="Seleção 02">Feminino</option>
+                                         
                                         </select>
                                         </div>
-                                    </div>
+                                    
+                              </div> 
+
                               </div>
                             </div><!--.box-movel-acordeon-->
                             <div class="box-movel-acordeon">
-                              <h5 class="acordeon">ASSOCIADOS <span class="arrow-sp"></span></h5>
+                              <h5 class="acordeon" class="lkassociados">DADOS DE ENDEREÇO <span class="arrow-sp"><i class="fas fa-chevron-down"></i></span></h5>
                               <div class="acordeon">
+                                     <div class="row">
+                                    <div class="col-sm-12 ">
+                                          <label for="tituloproposta">ENDEREÇO:</label>
+                                          <input type="text" id="tituloproposta" name="tituloproposta" class="form-control " >
+                                        </div>
+                                </div>
+
                                 <div class="row">
-                                      <div class="col-sm-12 ">
-                                           <label for="situacaoproposta">INTERESSADO </label>
-                                           <select id="situacaoproposta" name="situacaoproposta" class="form-control ">
-                                            <option disabled selected>Selecione</option>
-                                            <option value="Seleção 01">Seleção 02</option>
-                                            <option value="Seleção 02">Seleção 02</option>
-                                            <option value="Seleção 03">Seleção 03</option>
-                                          </select>
-                                      </div>
-                                    </div><!--.row-->
-                              </div>
+                                    <div class="col-sm-12 col-md-6">
+                                          <label for="tituloproposta">BAIRRO*</label>
+                                          <input type="text" id="tituloproposta" name="tituloproposta" class="form-control " >
+                                        </div>
+
+                                        <div class="col-sm-12 col-md-6">
+                                          <label for="tituloproposta">CIDADE*</label>
+                                          <input type="text" id="tituloproposta" name="tituloproposta" class="form-control " >
+                                        </div>
+                                </div>  
+
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-6">
+                                          <label for="tituloproposta">ESTADO*</label>
+                                          <input type="text" id="tituloproposta" name="tituloproposta" class="form-control " >
+                                        </div>
+
+                                        <div class="col-sm-12 col-md-6">
+                                          <label for="tituloproposta">CEP*</label>
+                                          <input type="text" id="tituloproposta" name="tituloproposta" class="form-control " >
+                                        </div>
+                                </div>  
+
+                              </div><!--.acordeon-->
                             </div><!--.box-movel-acordeon-->
                             <div class="box-movel-acordeon">
-                              <h5 class="acordeon">DADOS DA COMUNICAÇÃO <span class="arrow-sp"></span></h5>
+                              <h5 class="acordeon" id="lkcomunicacao">DADOS PROFISSIONAIS <span class="arrow-sp"><i class="fas fa-chevron-down"></i></span></h5>
                               <div class="acordeon">
+
                                  <div class="row">
-                                      <div class="col-sm-12 ">
-                                           <label for="situacaoproposta">MODELO MALA DIRETA</label>
+                                      <div class="col-sm-12 col-md-4">
+                                           <label for="tituloproposta">MATRICULA*</label>
+                                          <input type="text" id="tituloproposta" name="tituloproposta" class="form-control " >
+                                      </div>
+                                       <div class="col-sm-12 col-md-4">
+                                           <label for="situacaoproposta">SETOR</label>
+                                           <select id="situacaoproposta" name="situacaoproposta" class="form-control ">
+                                            <option disabled selected>Selecione</option>
+                                            <option value="Seleção 01">Seleção 02</option>
+                                            <option value="Seleção 02">Seleção 02</option>
+                                            <option value="Seleção 03">Seleção 03</option>
+                                          </select>
+                                      </div>
+                                       <div class="col-sm-12 col-md-4">
+                                           <label for="situacaoproposta">DISPONIBILIDADE</label>
                                            <select id="situacaoproposta" name="situacaoproposta" class="form-control ">
                                             <option disabled selected>Selecione</option>
                                             <option value="Seleção 01">Seleção 02</option>
@@ -109,22 +160,26 @@
                                           </select>
                                       </div>
                                     </div><!--.row-->
+                                 
+                              
                               </div>
                             </div><!--.box-movel-acordeon-->
   
                           </div>
                         </div>
-
-                             <div class="row">
+                        
+                         <div class="row">
 
                                   <div class="col-sm-12">
 
                                      <div class="botoes-de-envio">
-                                        <button class="btn btn-sm btn-primary">Salvar</button>
+                                        <button class="btn btn-primary" >Salvar</button>
+                                         <a href="inicial.php"  class="btn btn-outline-success" >Voltar </a>
                                       </div>
                           
                                   </div>
-                              </div>
+                              </div><!--.row-->
+                           
 
                       </fieldset>
                     </form>
@@ -143,6 +198,9 @@
 <?php include ('_footer.php'); ?>
 
 <script type="text/javascript">
+
+
+
 
   $('h5.acordeon').click(function(){
     $(this).parent().find('div.acordeon').slideToggle("slow");

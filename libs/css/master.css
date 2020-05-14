@@ -30,6 +30,16 @@ html,body,.container-fluid,#bloco-site{
 
 body{
   color: #545047;
+
+}
+
+body.capa{
+  display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .form-group{
@@ -63,6 +73,32 @@ a:hover{
   background: url(../img/bg-textura.svg) center -120px repeat-x;
 }
 
+.lista-icones-font{
+  list-style: none;
+}
+
+.lista-icon-ssitemas{
+  list-style: none;
+}
+
+.bgverd{
+  padding: 20px 5px 5px 5px;
+  background: #21483F;
+  display: table;
+  width: 100%;
+  min-height: 100px;
+  text-align: center;
+}
+
+.lista-icon-ssitemas li,.lista-icones-font li{
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.lista-icones-font li span{
+  color: #cecece;
+  font-size: 18px;
+}
 .container-fluid{
       min-height: 100%;
 }
@@ -174,16 +210,22 @@ form label{
 /* LOGIN */
 
 .login-container{
-  width: 360px;
+ /* width: 360px;
   margin: 10% auto;
   color: #60A29C;
-  text-align: center;
+  text-align: center;*/
+  max-width: 360px;
+    margin: auto;
+    color: #60A29C;
+    text-align: center;
+    width: 100%;
 }
 
 .login-container h1 {
   text-align: center;
-  font-size: 26px;
+  font-size: 20px;
   margin-bottom: 14px;
+  margin-top: 20px;
 }
 
 .login-container h1 span{
@@ -247,7 +289,40 @@ form label{
 #bg-menu, header{
   background: #21483F;
 }
+#bg-menu {
+    position: fixed;
+    top: 120px;
+    z-index: 1000;
+    padding-top: 20px;
+    height: calc(100vh - 4rem);
+}
 
+::-webkit-scrollbar-button       { background-color: #347D6B; }
+
+/* personalizar a barra em geral, aqui estou definindo 10px de largura para a barra vertical
+e 10px de altura para a barra horizontal */
+::-webkit-scrollbar {
+  width:10px;
+  height: 10px;
+  }
+   
+  /* aqui é para personalizar o fundo da barra, neste caso estou colocando um fundo cinza escuro*/
+  ::-webkit-scrollbar-track {
+  background:#333;
+  }
+   
+  /* aqui é a alça da barra, que demonstra a altura que você está na página
+  estou colocando uma cor azul clara nela*/
+  ::-webkit-scrollbar-thumb {
+  background: #34695c;
+  }
+
+@media (min-width: 768px){}
+#Menu {
+    max-height: calc(100vh - 9rem);
+    overflow-y: auto;
+
+}
 
 table.dataTable.dt-checkboxes-select tbody tr,
 table.dataTable thead th.dt-checkboxes-select-all,
@@ -606,13 +681,13 @@ a.avisos{
 /*MENU*/
 #Menu{
   display: block;
-  padding: 30px 5px 30px 30px;
+  padding: 5px 5px 30px 30px;
 }
 
 #Menu a{
   display: block;
   color: #fff;
-  font-size: .8rem;
+  font-size: 1.06rem;
   position: relative;
 }
 
@@ -629,29 +704,35 @@ a.mn_sub::before {
     width: 16px;
     position: absolute;
     left: -20px;
-    top: 0;
+    top: 3px;
     height: 20px;
     display: block;
-    -webkit-transform: rotate(-180deg);
-    -ms-transform: rotate(-180deg);
-    transform: rotate(-180deg);
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
 }
+
+a.mn_sub[aria-expanded="true"]::before{
+  -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
 a.mn_sub.setnav::before {
     -webkit-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
     transform: rotate(0deg);
 }
 
-a.mn_sub::before,.collapse a,.collapsing a,.mn_sb_sb.atv{
+a.mn_sub::before,a.icomenu,.collapsing a,.mn_sb_sb.atv{
      transition: -webkit-transform .3s;
     transition: transform .3s;
     transition: transform .3s,-webkit-transform .3s;
 }
 
-
 .collapse{
   display: table;
-  padding-left: 15px;
+ /* padding-left: 15px;*/
 }
 
 
@@ -697,6 +778,11 @@ a.mn_sub.no_sub::before{
 
 #geral-conteudo, #geral-conteudo a{
   color: #545047;
+}
+
+#geral-conteudo {
+    margin-left: auto;
+    height: calc(auto - 4rem);
 }
 
 #geral-conteudo h3{
@@ -782,8 +868,8 @@ a.mn_sub.no_sub::before{
 }
 .info-inicial-numeros{
   font-weight: bold;
-  font-size: 44px;
-  color: #21483F;
+  font-size: 44px !important;
+  color: #21483F !important;
 }
 
 .success-bg .box-info-inicial{
@@ -1015,8 +1101,10 @@ legend{
 .acordeon{
   padding: 20px;
 }
+
 h5.acordeon{ cursor: pointer;
-color: #347D6B;
+color: #5baa97;
+transition: 0.4s;
 background-color: rgba(0,0,0,.03);
     border-bottom: 0px ;  
     margin-bottom: 0;
@@ -1024,6 +1112,23 @@ background-color: rgba(0,0,0,.03);
     padding: 15px;
     position: relative;
 
+}
+
+h5.acordeon.atvmod{
+  background-color: #5baa97;
+  color: #fff;
+}
+
+.btnoff{
+  display: none !important;
+}
+
+.ativobtn{
+  display: block !important;
+}
+
+.firstac .acordeon{
+  display: block ;
 }
 .box-movel-acordeon{
   border: 1px solid rgba(0,0,0,.125);
@@ -1116,8 +1221,9 @@ div.acordeon{ display: none; }
 .card-header{
   position: relative;
 }
+
 .arrow-sp{
-  background: url(../img/arrow-ac.png) no-repeat right center;
+  /*background: url(../img/arrow-ac.png) no-repeat right center;*/
     position: absolute;
     content: '';
     width: 24px;
@@ -1128,6 +1234,10 @@ div.acordeon{ display: none; }
 
 .accordion{
   margin: 30px 0;
+}
+.btn-link[aria-expanded="true"]{
+  background: #519c8a !important;
+  color: #fff !important;
 }
 /*.btn-link[aria-expanded="false"] .arrow-sp {
     
@@ -1142,19 +1252,20 @@ div.acordeon{ display: none; }
     -ms-transform: rotate(-180deg);
     transform: rotate(-180deg);
 }*/
-h5.acordeon .arrow-sp{
+h5.acordeon .arrow-sp i{
  
   -webkit-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
     transform: rotate(0deg);
+    transition: 0.4s;
 }
 
 
-h5.acordeon.atvmod .arrow-sp {
+h5.acordeon.atvmod .arrow-sp i{
     -webkit-transform: rotate(-180deg);
     -ms-transform: rotate(-180deg);
     transform: rotate(-180deg);
-
+transition: 0.4s;
     
 }
 

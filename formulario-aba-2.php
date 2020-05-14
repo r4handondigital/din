@@ -225,6 +225,7 @@
 
                                      <div class="botoes-de-envio">
                                         <button class="btn btn-primary" >Salvar</button>
+                                        <a  onclick="goBack()"  class="btn btn-outline-success" >Voltar </a>
                                       </div>
                           
                                   </div>

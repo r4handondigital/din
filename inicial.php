@@ -2,15 +2,15 @@
 
     <div class="bg-cinza container-fluid">
       
-        <div class="row" id="bloco-site">
-            
-            <div class="col mov-menu" id="bg-menu">
+        <div class="row flex-xl-nowrap" id="bloco-site">
+      
+    <div class="col-md-3 col-xl-2 mov-menu" id="bg-menu">
 
              <?php include ('_menu.php'); ?>
 
             </div><!-- /col  // Menu lateral (DESKTOP) -->
 
-            <div class="col-md-10" id="geral-conteudo">
+            <div class="col-md-9 col-xl-10 col-sm-12" id="geral-conteudo">
               <!-- MIOLO DE PÃO -->
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">

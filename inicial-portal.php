@@ -1,10 +1,10 @@
 <?php include ('_header.php'); ?>
 
-    <div class="container-fluid">
+    <div class="bg-cinza container-fluid">
       
-        <div class="row" id="bloco-site">
-            
-            <div class="col mov-menu" id="bg-menu">
+        <div class="row flex-xl-nowrap" id="bloco-site">
+      
+    <div class="col-md-3 col-xl-2 mov-menu" id="bg-menu">
 
              <?php include ('_menu.php'); ?>
 

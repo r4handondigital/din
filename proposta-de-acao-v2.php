@@ -1,22 +1,22 @@
 <?php include ('_header.php'); ?>
 
-<div class="container-fluid">
+<div class="bg-cinza  container-fluid">
   
-  <div class="row" id="bloco-site">
+  <div class="row flex-xl-nowrap" id="bloco-site">
       
-    <div class="col mov-menu" id="bg-menu">
+    <div class="col-md-3 col-xl-2 mov-menu" id="bg-menu">
 
        <?php include ('_menu.php'); ?>
 
       </div><!-- /col  // Menu lateral (DESKTOP) -->
 
-      <div class="col-md-10" id="geral-conteudo">
+      <div class="col-md-9 col-xl-10 col-sm-12" id="geral-conteudo">
         <!-- MIOLO DE PÃO -->
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="inicial.php"><i class="fa fa-home"></i></a></li>
-            <li class="breadcrumb-item"><a href="pfa.php">PFA</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Propostas de Ação</li>
+            <li class="breadcrumb-item"><a href="#">Modelos de páginas</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Crud básico</li>
           </ol>
         </nav>
         <!-- MIOLO DE PÃO -->
@@ -25,12 +25,12 @@
 
          <section class="sessao-conteudo">
            <h1 class="titulo">
-              Propostas de Ação (V2)
+             Crud básico
 
             </h1>
          </section> 
 
-        <div id="content-2" class="contentScroll mCustomScrollbar">
+       
 
             <div class="row">
                 <div class="col-sm-12">
@@ -123,10 +123,11 @@
 
                                      <div class="botoes-de-envio">
                                         <button class="btn btn-primary" >Salvar</button>
+                                         <a href="dimensao.php"  class="btn btn-outline-success" >Voltar </a>
                                       </div>
                           
                                   </div>
-                              </div>
+                              </div><!--.row-->
 
                           </fieldset>
                           
@@ -141,7 +142,7 @@
                 </div>
                 
             </div>
-        </div>
+        
       </div><!--.col-md-10 GERAL DO MIOLO-->
 
 
@@ -153,6 +154,8 @@
 <?php include ('_footer.php'); ?>
 
 <script type="text/javascript">
+
+
     $.validator.setDefaults( {
       submitHandler: function () {
         Swal.fire({

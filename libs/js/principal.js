@@ -70,7 +70,8 @@ function updateDataTableSelectAllCtrl(table){
          }
       }
    });
-   
+
+
    // Handle click on checkbox
    $('#example tbody').on('click', 'input[type="checkbox"]', function(e){
       var $row = $(this).closest('tr');
